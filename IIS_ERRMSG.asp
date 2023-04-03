@@ -1,9 +1,9 @@
 <html lang="zh-Hant-TW">
-<%@language=jscript%>
+<%@language=jscript codepage="65001" %>
 
 	<head>
 		<%title="寶工-prokits" %>
-			<!--#include virtual="frame.inc"-->
+			<!--#include virtual="frame.asp"-->
 			<link href="/css/error.css" rel="stylesheet" />
 	</head>
 

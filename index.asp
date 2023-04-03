@@ -1,9 +1,9 @@
 <html lang="zh-Hant-TW">
-<%@language=jscript%>
+<%@language=jscript codepage="65001" %>
 
 	<head>
-		<%title="寶工-prokits" %>
-			<!--#include file="virtual.inc"-->
+		<%title="寶工產品介紹-prokits" %>
+			<!--#include virtual="frame.asp"-->
 			<link href="/css/index.css" rel="stylesheet" />
 	</head>
 
@@ -14,7 +14,6 @@
 			<!-- Header -->
 			<!-- #include virtual="/header.asp" -->
 			<!-- /Header -->
-
 			<div class="container-full">
 				<div class="container">
 
