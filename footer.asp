@@ -1,1 +1,6 @@
-<!-- #include virtual="/frame/footerLsdvA.asp" -->
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+    </div>
+  </div>
+</footer>
