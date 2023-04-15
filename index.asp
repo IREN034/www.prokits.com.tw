@@ -10,10 +10,12 @@
 	<body>
 		<div id="lsdv">
 
-			<h1 class="text-hide">品牌名稱</h1>
+			<h1 class="text-hide">寶工</h1>
+
 			<!-- Header -->
 			<!-- #include virtual="/header.asp" -->
 			<!-- /Header -->
+
 			<div class="container-full">
 				<div class="container">
 

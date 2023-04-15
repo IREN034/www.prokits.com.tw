@@ -1,0 +1,48 @@
+.productDescription
+  padding: 0 30px 30px
+  +fontT
+  &-sku
+    display: inline-flex
+    font-size: $font-size-md
+  &-supported
+    display: inline-flex
+    font-size: $font-size-xs
+    &-item
+      display: inline-block
+      +distanceMP(0 2px 2px, 1px 5px)
+      line-height: 1.3em
+      border-radius: 10px
+      background: $CIScolorD
+      color: $WHITEcolor
+  &-name
+    padding: 10px 0
+    +fontT-lg
+  &-material
+    &-img
+      margin: 5px 5px 0 0
+      height: 30px
+  &-positiveNotes
+    display: flex
+    padding: 10px 0
+  &-keywords
+    padding: 30px 0 10px
+    &-item
+      padding: 0 5px 5px 0
+      color: $CIScolorA
+      font-weight: 600
+      text-decoration: none
+      &::before
+        content: "#"
+
+  // +fontT($font-size)
+  // > li
+  //   display: inline-block
+  // >li+li:before
+  //   padding: 0 5px
+  //   content: "/"
+  //   color: darken($WHITEcolor, 51.5%)
+  // &-link
+  //   text-decoration: none
+  //   color: darken($WHITEcolor, 51.5%)
+  // &-active
+  //   color: darken($WHITEcolor, 78.5%)

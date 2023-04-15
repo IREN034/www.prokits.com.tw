@@ -6,7 +6,11 @@
 <title>
   <%=title%>
 </title>
+
 <link href="/images/prokits.ico" rel="shortcut icon" />
 
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 <link href="/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/css/layout.css" rel="stylesheet" />
+<link href="/css/pk-layout.css" rel="stylesheet" />

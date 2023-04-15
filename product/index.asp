@@ -4,31 +4,45 @@
   <head>
     <%title="寶工產品介紹-prokits" %>
       <!--#include virtual="frame.asp"-->
-      <link href="/css/index.css" rel="stylesheet" />
+
+      <!-- https://swiperjs.com/demos -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+      <link href="/css/pk-product.css" rel="stylesheet" />
+
   </head>
 
   <body>
-    <div id="lsdv">
+    <div id="pkdv">
 
-      <!-- Header -->
       <!-- #include virtual="/header.asp" -->
-      <!-- /Header -->
 
+      <!-- productInfo -->
       <div class="container-full">
         <div class="container">
 
-          <!-- breadcrumb -->
-          <%breadcrumb="產品名稱" %>
+          <!-- 麵包屑 -->
+          <%breadcrumb=["分類","產品名稱"] %>
             <!--#include virtual="/component/_breadcrumb.asp"-->
-            <!-- breadcrumb END -->
 
+            <div class="row product-row" itemscope itemtype="http://schema.org/Product">
+              <!-- 產品輪播圖 -->
+              <!-- #include virtual="/product/_swiper.asp" -->
+
+              <!-- 產品說明 -->
+              <!-- #include virtual="/product/_description.asp" -->
+            </div>
 
         </div>
+        <div class="container product-row">
+          <!-- tabs -->
+          <!-- #include virtual="/product/_navTabs.asp" -->
+        </div>
       </div>
+      <!-- productInfo END -->
 
-      <!-- Footer -->
       <!-- #include virtual="/footer.asp" -->
-      <!-- /Footer -->
 
     </div>
   </body>

@@ -1,0 +1,192 @@
+@charset "UTF-8";
+#pkdv .breadcrumb {
+  padding: 20px 0;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+#pkdv .breadcrumb > li {
+  display: inline-block;
+}
+#pkdv .breadcrumb > li + li:before {
+  padding: 0 5px;
+  content: "/";
+  color: #7c7c7c;
+}
+#pkdv .breadcrumb-link {
+  text-decoration: none;
+  color: #7c7c7c;
+}
+#pkdv .breadcrumb-active {
+  color: #373737;
+}
+#pkdv .swiper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  #pkdv .swiper {
+    height: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  #pkdv .swiper {
+    height: 580px;
+  }
+}
+#pkdv .swiper-wrapper {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#pkdv .swiper-button-next:after, #pkdv .swiper-button-prev:after {
+  color: #ffffff;
+}
+#pkdv .swiper-slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#pkdv .swiper-BigImg {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #pkdv .swiper-BigImg {
+    width: 85%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-block;
+  }
+}
+#pkdv .swiper-smallImg {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  #pkdv .swiper-smallImg {
+    display: inline-block;
+    float: left;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 8px;
+  }
+}
+@media (min-width: 1200px) {
+  #pkdv .swiper-smallImg {
+    margin-right: 15px;
+  }
+}
+#pkdv .swiper-smallImg .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  height: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+#pkdv .swiper-smallImg .swiper-slide-thumb-active {
+  opacity: 1;
+}
+#pkdv .productDescription {
+  padding: 0 30px 30px;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+}
+#pkdv .productDescription-sku {
+  display: inline-flex;
+  font-size: 1.25em;
+}
+#pkdv .productDescription-supported {
+  display: inline-flex;
+  font-size: 0.7em;
+}
+#pkdv .productDescription-supported-item {
+  display: inline-block;
+  margin: 0 2px 2px;
+  padding: 1px 5px;
+  line-height: 1.3em;
+  border-radius: 10px;
+  background: #83A186;
+  color: #ffffff;
+}
+#pkdv .productDescription-name {
+  padding: 10px 0;
+  font: 1.875em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+}
+#pkdv .productDescription-material-img {
+  margin: 5px 5px 0 0;
+  height: 30px;
+}
+#pkdv .productDescription-positiveNotes {
+  display: flex;
+  padding: 10px 0;
+}
+#pkdv .productDescription-keywords {
+  padding: 30px 0 10px;
+}
+#pkdv .productDescription-keywords-item {
+  padding: 0 5px 5px 0;
+  color: #005856;
+  font-weight: 600;
+  text-decoration: none;
+}
+#pkdv .productDescription-keywords-item::before {
+  content: "#";
+}
+#pkdv .navTabs {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border: 1px solid #b3b3b3;
+  border-right: none;
+  border-left: none;
+  font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 9;
+  background: white;
+}
+#pkdv .navTabs-fixed {
+  position: fixed;
+  top: 0;
+}
+#pkdv .navTabs-item {
+  display: inline-flex;
+  padding: 20px 8px;
+  color: #1d1d1d;
+  cursor: pointer;
+}
+#pkdv .navTabs-item:hover {
+  background: #e6e6e6;
+}
+@media (min-width: 480px) {
+  #pkdv .navTabs-item {
+    padding: 20px 12px;
+    font-size: 1.25em;
+  }
+}
+@media (min-width: 1200px) {
+  #pkdv .navTabs-item {
+    padding: 20px 30px;
+    font-size: 1.25em;
+  }
+}
+#pkdv .navTabs-item-active {
+  background: #d9d9d9;
+}
+#pkdv .navTabs-pane {
+  display: none;
+  padding: 30px 0;
+  word-break: break-all;
+}
+#pkdv .navTabs-pane-active {
+  display: block;
+}
+#pkdv .product-row {
+  padding-bottom: 50px;
+}/*# sourceMappingURL=pk-product.css.map */

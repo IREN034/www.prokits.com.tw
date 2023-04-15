@@ -1,0 +1,46 @@
+// 修改 swiper css
+.swiper
+  width: 100%
+  height: fit-content
+  margin-left: auto
+  margin-right: auto
+  @media (min-width: $screen-md)
+    height: 450px
+  @media (min-width: $screen-lg)
+    height: 580px
+  &-wrapper
+    height: fit-content
+  &-button-next:after, &-button-prev:after
+    color: $WHITEcolor
+  &-slide
+    &-img
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-BigImg
+    width: 100%
+    @media (min-width: $screen-md)
+      width: 85%
+      height: fit-content
+      display: inline-block
+  &-smallImg
+    box-sizing: border-box
+    padding: 10px 0
+    @media (min-width: $screen-md)
+      display: inline-block
+      float: left
+      width: fit-content
+      margin-right: 8px
+    @media (min-width: $screen-lg)
+      margin-right: 15px
+    .swiper-slide
+      background-size: cover
+      background-position: center
+      width: fit-content
+      height: fit-content
+      height: 100%
+      opacity: 0.4
+      cursor: pointer
+      &-thumb-active
+        opacity: 1

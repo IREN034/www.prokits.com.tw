@@ -1,0 +1,49 @@
+// 重置
+@import "bootstrap/normalize"
+
+// 只引用bootstrap格線部份，其他設計重新安排
+
+// iconFont
+// @import _glyphicons
+
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+
+// 互動視窗 @import _modals
+body
+	background: darken($WHITEcolor, 3%)
+
+@keyframes fixedNavDown
+	0%
+		top: -100px
+	20%
+		top: 0
+
+// hidden: <head/>
+.js-headHidden
+	overflow: hidden
+
+#pkdv
+	height: 100%
+	// +linearGradient(linear-gradient(darken($WHITEcolor, 12%) 100px, darken($WHITEcolor, 3%)150px, darken($WHITEcolor, 3%)))
+	// 共用
+	@import _scaffolding
+	// 表單
+	// @import _forms
+	// 按鈕
+	@import _buttons
+	// 置頂
+	// @import _gotop
+
+	//頁頭
+	// @import _header
+
+	// 頁尾
+	// @import _footer
+
+	// 背景變黑色透明
+	// @import _overlay
+
+	// 主選單
+	// @import _sideNav
