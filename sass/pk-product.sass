@@ -2,10 +2,23 @@
 @import _variables
 @import _minxins
 
+@import _modal
 #pkdv
   @import _breadcrumb
   @import _productSwiper
   @import _productDescription
   @import _navTabs
+  @import _youtube
+  @import _collapse
+
   .product-row
     padding-bottom: 50px
+  .icon-arrow
+    +icon(24px,24px,$icon-arrow)
+  .icon-cart
+    +icon(24px,24px,$icon-cart)
+  .icon-play
+    position: absolute
+    top: calc(50% - 20px)
+    left: calc(50% - 20px)
+    +icon(40px,40px,$icon-play)

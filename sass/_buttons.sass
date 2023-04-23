@@ -5,8 +5,9 @@
   white-space: nowrap
   +fontT-md
   letter-spacing: 0.05em
+  text-align: center
   border: none
-  border-radius: 0
+  border-radius: 50px
   &:hover,
   &:focus,
   &.focus,
@@ -22,25 +23,38 @@
 .btn-pay
   background: $CIScolorC
   color: darken($WHITEcolor, 0%)
-  border-radius: 50px
+  text-decoration: none
   &:hover, &:focus
-    background: darken($CIScolorC, 10%)
-    -pie-background: darken($CIScolorC, 10%)
+    color: darken($WHITEcolor, 0%)
+    background: lighten($CIScolorC, 10%)
+    -pie-background: lighten($CIScolorC, 10%)
 //繼續
 .btn-keep
-  +linearGradient(linear-gradient(darken($CIScolorB, 0%), darken($CIScolorB, 10%)))
+  background: $CIScolorA
   color: darken($WHITEcolor, 0%)
+  text-decoration: none
   &:hover, &:focus
-    background: darken($CIScolorB, 10%)
-    -pie-background: darken($CIScolorB, 10%)
-    +box-shadow(0 0 5px 0 darken($CIScolorB, 0%))
+    color: darken($WHITEcolor, 0%)
+    background: lighten($CIScolorA, 15%)
+    -pie-background: lighten($CIScolorA, 15%)
+//訊息
+.btn-info
+  background: $CIScolorB
+  color: darken($WHITEcolor, 0%)
+  text-decoration: none
+  &:hover, &:focus
+    color: darken($WHITEcolor, 0%)
+    background: lighten($CIScolorB, 4%)
+    -pie-background: lighten($CIScolorB, 4%)
 //離開
 .btn-out
-  background: darken($WHITEcolor, 18.5%)
+  background: darken($WHITEcolor, 47%)
   color: darken($WHITEcolor, 0%)
+  text-decoration: none
   &:hover, &:focus
+    color: darken($WHITEcolor, 0%)
     background: darken($WHITEcolor, 35%)
-    +box-shadow(0 0 5px 0 darken($WHITEcolor, 30%))
+    -pie-background: darken($WHITEcolor, 35%)
 .btn-link
   padding: 5px
   +linearGradient(linear-gradient(darken($CIScolorB, 0%), darken($CIScolorB, 5%)))
@@ -57,7 +71,7 @@
   vertical-align: middle
 .btn-lg,
 .btn-group-lg > .btn
-  padding: 15px 20px
+  padding: 12px 20px
   font-size: $font-size-md
 .btn-sm,
 .btn-group-sm > .btn
@@ -67,8 +81,12 @@
   padding: 1px 5px
 
 .btn-block
-  display: block
-  width: 80%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  @media (min-width: $screen-lg)
+    width: 85%
 
 .btn-block + .btn-block
   margin-top: 5px

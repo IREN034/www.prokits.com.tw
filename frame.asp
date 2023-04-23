@@ -11,6 +11,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 <link href="/css/bootstrap.min.css" rel="stylesheet" />
 <link href="/css/pk-layout.css" rel="stylesheet" />

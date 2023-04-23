@@ -3,66 +3,37 @@
     產品說明
   </li>
   <li class="navTabs-item" role="productAssemble" onclick="onChangesTabs(event, 'productAssemble')">
-    組裝教學
+    教學影片
   </li>
   <li class="navTabs-item" role="hoproductmeFaq" onclick="onChangesTabs(event, 'hoproductmeFaq')">
     FAQ
   </li>
   <li class="navTabs-item" role="productDownload" onclick="onChangesTabs(event, 'productDownload')">
-    說明書/程式下載
+    說明書/<br class="visible-xs visible-sm" />程式下載
+  </li>
+  <li class="navTabs-item" role="productDownload" onclick="onChangesTabs(event, 'productDistribution')">
+    經銷說明
   </li>
 </ul>
 
 <div class="navTabs-tab">
   <div class="navTabs-pane navTabs-pane-active" id="productInfo" role="tabpanel" aria-labelledby="info-tab">
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
-    <p>產品說明...</p>
+    <p class="navTabs-pane-title">產品說明</p>
+    <!-- #include virtual="/product/_content.html" -->
   </div>
-  <div class="navTabs-pane" id="productAssemble" role="tabpanel" aria-labelledby="assemble-tab">組裝教學...</div>
-  <div class="navTabs-pane" id="hoproductmeFaq" role="tabpanel" aria-labelledby="faq-tab">FAQ...</div>
-  <div class="navTabs-pane" id="productDownload" role="tabpanel" aria-labelledby="download-tab">說明書/程式下載...</div>
+  <div class="navTabs-pane" id="productAssemble" role="tabpanel" aria-labelledby="assemble-tab">
+    <p class="navTabs-pane-title">教學影片</p>教學影片...
+  </div>
+  <div class="navTabs-pane" id="hoproductmeFaq" role="tabpanel" aria-labelledby="faq-tab">
+    <p class="navTabs-pane-title">FAQ</p>
+    <!-- #include virtual="/product/_faqCollapse.asp" -->
+  </div>
+  <div class="navTabs-pane" id="productDownload" role="tabpanel" aria-labelledby="download-tab">
+    <p class="navTabs-pane-title">說明書/程式下載</p>說明書/程式下載...
+  </div>
+  <div class="navTabs-pane" id="productDistribution" role="tabpanel" aria-labelledby="distribution-tab">
+    <p class="navTabs-pane-title">經銷說明</p>經銷說明
+  </div>
 </div>
 
 <script>

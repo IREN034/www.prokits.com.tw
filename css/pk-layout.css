@@ -353,7 +353,7 @@ body {
   color: black;
 }
 #pkdv a:hover {
-  color: #005856;
+  color: #256C53;
 }
 #pkdv hr {
   margin: 10px 0;
@@ -372,8 +372,9 @@ body {
   font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
   letter-spacing: 0.05em;
+  text-align: center;
   border: none;
-  border-radius: 0;
+  border-radius: 50px;
 }
 #pkdv .btn:hover, #pkdv .btn:focus, #pkdv .btn.focus, #pkdv .btn:active, #pkdv .btn.active {
   border: none;
@@ -383,37 +384,49 @@ body {
   cursor: not-allowed;
 }
 #pkdv .btn-pay {
-  background: #E9BC1B;
+  background: #E7B506;
   color: white;
-  border-radius: 50px;
+  text-decoration: none;
 }
 #pkdv .btn-pay:hover, #pkdv .btn-pay:focus {
-  background: #bf9912;
-  -pie-background: #bf9912;
+  color: white;
+  background: #f9cb27;
+  -pie-background: #f9cb27;
 }
 #pkdv .btn-keep {
-  background: linear-gradient(#0097d8, #0073a5);
-  -pie-background: linear-gradient(#0097d8, #0073a5);
-  behavior: url(/pie/PIE.htc);
+  background: #256C53;
   color: white;
+  text-decoration: none;
 }
 #pkdv .btn-keep:hover, #pkdv .btn-keep:focus {
-  background: #0073a5;
-  -pie-background: #0073a5;
-  box-shadow: 0 0 5px 0 #0097d8;
+  color: white;
+  background: #39a57f;
+  -pie-background: #39a57f;
+}
+#pkdv .btn-info {
+  background: #DA9D7B;
+  color: white;
+  text-decoration: none;
+}
+#pkdv .btn-info:hover, #pkdv .btn-info:focus {
+  color: white;
+  background: #dea98b;
+  -pie-background: #dea98b;
 }
 #pkdv .btn-out {
-  background: #d0d0d0;
+  background: #878787;
   color: white;
+  text-decoration: none;
 }
 #pkdv .btn-out:hover, #pkdv .btn-out:focus {
+  color: white;
   background: #a6a6a6;
-  box-shadow: 0 0 5px 0 #b3b3b3;
+  -pie-background: #a6a6a6;
 }
 #pkdv .btn-link {
   padding: 5px;
-  background: linear-gradient(#0097d8, #0085bf);
-  -pie-background: linear-gradient(#0097d8, #0085bf);
+  background: linear-gradient(#da9d7b, #d48e67);
+  -pie-background: linear-gradient(#da9d7b, #d48e67);
   behavior: url(/pie/PIE.htc);
   color: white;
   font: 0.9em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -421,9 +434,9 @@ body {
   letter-spacing: -0.05px;
 }
 #pkdv .btn-link:hover, #pkdv .btn-link:focus {
-  background: #0085bf;
-  -pie-background: #0085bf;
-  box-shadow: 0 0 5px 0 #0097d8;
+  background: #d48e67;
+  -pie-background: #d48e67;
+  box-shadow: 0 0 5px 0 #da9d7b;
 }
 #pkdv .btn-group {
   display: inline-block;
@@ -432,7 +445,7 @@ body {
 }
 #pkdv .btn-lg,
 #pkdv .btn-group-lg > .btn {
-  padding: 15px 20px;
+  padding: 12px 20px;
   font-size: 1.25em;
 }
 #pkdv .btn-sm,
@@ -444,8 +457,15 @@ body {
   padding: 1px 5px;
 }
 #pkdv .btn-block {
-  display: block;
-  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #pkdv .btn-block {
+    width: 85%;
+  }
 }
 #pkdv .btn-block + .btn-block {
   margin-top: 5px;

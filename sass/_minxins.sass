@@ -1,3 +1,5 @@
+@import _variables
+
 @mixin fontT($line-height: 1.2em)
 	font: $font-size $font-family
 	line-height: $line-height
@@ -105,3 +107,12 @@
 			#lsdv header .logo
 				background: none
 				border: none
+
+//icon: 
+@mixin icon($width: 24px, $height: 24px, $background )
+	display: inline-block
+	width: $width
+	height: $height
+	background: $background
+	background-size: contain
+	margin: 0 3px

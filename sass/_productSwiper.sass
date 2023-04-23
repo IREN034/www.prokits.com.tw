@@ -12,6 +12,8 @@
     height: fit-content
   &-button-next:after, &-button-prev:after
     color: $WHITEcolor
+    font-size: 2em
+    opacity: 0
   &-slide
     &-img
       display: block
@@ -21,7 +23,7 @@
   &-BigImg
     width: 100%
     @media (min-width: $screen-md)
-      width: 85%
+      width: 86.5%
       height: fit-content
       display: inline-block
   &-smallImg
@@ -30,7 +32,7 @@
     @media (min-width: $screen-md)
       display: inline-block
       float: left
-      width: fit-content
+      width: calc(100% - 86.5% - 15px)
       margin-right: 8px
     @media (min-width: $screen-lg)
       margin-right: 15px
@@ -38,9 +40,13 @@
       background-size: cover
       background-position: center
       width: fit-content
-      height: fit-content
-      height: 100%
+      height: auto
       opacity: 0.4
       cursor: pointer
+      @media (min-width: $screen-lg)
+        height: fit-content
       &-thumb-active
         opacity: 1
+  &:hover
+    .swiper-button-next:after, .swiper-button-prev:after
+      opacity: 1

@@ -1,0 +1,105 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+.fade
+  opacity: 0
+  -webkit-transition: opacity .15s linear
+  transition: opacity .15s linear
+.fade.in
+  opacity: 1
+.modal-open
+  overflow: hidden
+.modal
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1040
+  display: none
+  overflow: auto
+  overflow-y: scroll
+.modal.fade .modal-dialog
+  -webkit-transform: translate(0, -25%)
+  -ms-transform: translate(0, -25%)
+  transform: translate(0, -25%)
+  -webkit-transition: -webkit-transform .3s ease-out
+  -moz-transition: -moz-transform .3s ease-out
+  -o-transition: -o-transform .3s ease-out
+  transition: transform .3s ease-out
+
+.modal.in .modal-dialog
+  -webkit-transform: translate(0, 0)
+  -ms-transform: translate(0, 0)
+  transform: translate(0, 0)
+.modal-dialog
+  position: relative
+  z-index: 1050
+  width: auto
+  margin: 10px
+.modal-close
+  position: absolute
+  right: 20px
+  top: 20px
+  font-size: 2em
+.modal-content
+  position: relative
+  padding: 35px
+  border-radius: 12px
+  background: darken($WHITEcolor, 0%)
+  background-clip: padding-box
+  color: darken($WHITEcolor, 100%)
+.modal-backdrop
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1030
+  background-color: darken($WHITEcolor, 100%)
+
+.modal-backdrop.fade
+  opacity: 0
+  filter: alpha(opacity=0)
+.modal-backdrop.in
+  opacity: .7
+  filter: alpha(opacity=70)
+.modal-header
+  padding: 15px
+  border-bottom: 1px solid darken($WHITEcolor, 10.3%)
+  background: darken($WHITEcolor, 0%)
+  text-align: center
+.modal-body
+  position: relative
+  padding: 20px
+  font-size: $font-size-md
+  line-height: $font-size-md
+
+// Footer (for actions)
+.modal-footer
+  padding: 19px 20px 20px
+  margin-top: 15px
+  text-align: right
+  border-top: 1px solid darken($WHITEcolor, 10.3%)
+.modal-footer:before, .modal-footer:after
+  display: table
+  content: " "
+.modal-footer:after
+  clear: both
+.modal-footer:before, .modal-footer:after
+  display: table
+  content: " "
+.modal-footer:after
+  clear: both
+
+.modal-title
+  font-size: $font-size-lg
+  color: $CIScolorA
+  font-weight: 600
+@media screen and (min-width:768px)
+  .modal-dialog
+    width: 600px
+    margin: 300px auto
+  .modal-content
+    -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5)

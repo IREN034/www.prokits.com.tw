@@ -20,26 +20,30 @@
 
       <!-- productInfo -->
       <div class="container-full">
+        <!-- 首圖 -->
+        <!-- #include virtual="/component/_BLB-ring.asp" -->
+
         <div class="container">
 
           <!-- 麵包屑 -->
-          <%breadcrumb=["分類","產品名稱"] %>
+          <%breadcrumb=["主題類別","分類名稱"] %>
             <!--#include virtual="/component/_breadcrumb.asp"-->
-            <!-- include virtual="/component/_testComponent.asp" -->
 
-            <div class="row product-row" itemscope itemtype="http://schema.org/Product">
-              <!-- 產品輪播圖 -->
-              <!-- #include virtual="/product/_swiper.asp" -->
 
-              <!-- 產品說明 -->
-              <!-- #include virtual="/product/_description.asp" -->
+            <div class="row product-row" itemscope itemtype="http://schema.org/Taxon">
+
+              <div class="col-xs-12 col-md-3">
+                <!--#include virtual="/component/_tree-simple.asp"-->
+              </div>
+
+              <div class="col-xs-12 col-md-9">
+                <!--#include virtual="/component/_proList-img-xs-3.asp"-->
+              </div>
+
             </div>
 
         </div>
-        <div class="container product-row">
-          <!-- tabs -->
-          <!-- #include virtual="/product/_navTabs.asp" -->
-        </div>
+
       </div>
       <!-- productInfo END -->
 

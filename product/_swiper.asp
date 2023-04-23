@@ -1,36 +1,45 @@
 <div class="col-xs-12 col-md-7 productSwiper">
 
   <div class="swiper swiper-BigImg">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper" itemscope itemtype="https://schema.org/ImageObject">
       <div class="swiper-slide">
-        <img src="https://ref.prokits.com.tw/ProductPic/GE-617/1/2017112313323127613.png" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://ref.prokits.com.tw/ProductPic/GE-617/1/2017112313323127613.png"
+          class="swiper-slide-img" alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-2.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="swiper-slide-img" />
+        <!-- #include virtual="/product/_youtube.asp" -->
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-4.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-5.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-6.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-7.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-8.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-9.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-9.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-10.jpg" class="swiper-slide-img" />
+        <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-10.jpg" class="swiper-slide-img"
+          alt="" />
       </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -45,7 +54,10 @@
         <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="swiper-slide-img" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="swiper-slide-img" />
+        <i class="icon-play"></i>
+        <img
+          src="https://i.ytimg.com/vi/aqbPgZ1nlS8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFcgZSg1MA8=&rs=AOn4CLBJuMGJZE8Q_Oamt8k9jw_aJx8w_g"
+          class="swiper-slide-img" />
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="swiper-slide-img" />
@@ -100,10 +112,10 @@
       swiper: swiper,
       autoScrollOffset: 1
     },
-    on: {
-      touchStart: function (swiper, event) {
-        alert('點擊;' + this.activeIndex);
-      },
-    },
+    // on: {
+    //   touchStart: function (swiper, event) {
+    //     alert('點擊;' + this.activeIndex);
+    //   },
+    // },
   });
 </script>

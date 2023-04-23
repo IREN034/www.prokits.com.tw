@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-md-5 productDescription">
   <h2 itemprop="sku" class="productDescription-sku">GE-892</h2>
-  <ul itemprop="productSupported" class="productDescription-supported">
+  <ul class="productDescription-supported">
     <li class="productDescription-supported-item">Taiwan</li>
     <li class="productDescription-supported-item">China</li>
   </ul>
@@ -23,12 +23,22 @@
     <a href="" class="productDescription-keywords-item">科學玩具</a>
     <a href="" class="productDescription-keywords-item">電磁動力</a>
     <a href="" class="productDescription-keywords-item">益智</a>
+  </div>
 
-  </div>
-  <button itemprop="orderedItem" class="btn btn-pay btn-block btn-lg">立即購買</button>
-  <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
-    <div itemprop="author" itemtype="https://schema.org/Organization" itemscope>
-      <meta itemprop="name" content="prokits" />
+  <a itemprop="url" class="btn btn-pay btn-block btn-lg" href="#modal-container1" data-toggle="modal">
+    查看詳情<i class="icon-arrow"></i></a>
+  <a itemprop="url" class="btn btn-keep btn-block btn-lg" href="#modal-container1" data-toggle="modal">
+    <i class="icon-cart"></i>新品上架中</a>
+  <a itemprop="url" class="btn btn-info btn-block btn-lg" href="#modal-container1" data-toggle="modal">
+    <i class="icon-cart"></i>補貨中</a>
+  <a itemprop="url" class="btn btn-out btn-block btn-lg" href="#modal-container1" data-toggle="modal">
+    已售完，請查看取代品<i class="icon-arrow"></i></a>
+  <%modal=["Information", "產品上架處理中，請洽02-2218-3233分機329取得更多資訊，謝謝!!" ] %>
+    <!--#include virtual="/component/_modal.asp"-->
+
+    <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+      <div itemprop="author" itemtype="https://schema.org/Organization" itemscope>
+        <meta itemprop="name" content="prokits" />
+      </div>
     </div>
-  </div>
 </div>
