@@ -32,14 +32,16 @@
 
             <div class="row product-row" itemscope itemtype="http://schema.org/Taxon">
 
-              <div class="col-xs-12 col-md-3">
-                <!--#include virtual="/component/_sideMenu-simple.asp"-->
-              </div>
-
-              <div class="col-xs-12 col-md-9">
+              <div class="col-xs-12 col-md-9 col-md-push-3">
                 <!--#include virtual="/component/_proList-img-xs-3.asp"-->
                 <!--#include virtual="/component/_pagination.asp"-->
               </div>
+
+              <div class="col-xs-12 col-md-3 col-md-pull-9">
+                <!--#include virtual="/component/_sideMenu-simple.asp"-->
+              </div>
+
+
 
             </div>
 
