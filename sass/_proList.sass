@@ -1,0 +1,43 @@
+.proList
+  &-item
+    padding: 0 10px 40px
+    +fontT
+    @media (min-width: $screen-sm)
+      &:nth-child(2n+1)
+        clear: both
+    @media (min-width: $screen-lg)
+      &:nth-child(2n+1)
+        clear: inherit
+      &:nth-child(3n+1)
+        clear: both
+    .img-responsive
+      margin-bottom: 10px
+  &-sku
+    display: inline-flex
+    color: $CIScolorLink
+  &-supported
+    display: inline-flex
+    position: relative
+    top: -3px
+    font-size: $font-size-xs
+    &-item
+      display: inline-block
+      +distanceMP(0 2px 2px, 1px 5px)
+      line-height: 1.3em
+      border-radius: 10px
+      background: $CIScolorD
+      color: $WHITEcolor
+  &-name
+    height: 55px
+    overflow: hidden
+    text-overflow: ellipsis
+    box-sizing: border-box
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    margin: 10px 0
+    +fontT-md(1.3em)
+    font-weight: 600
+  &-link
+    text-decoration: none
+  // &-img-xs-3:目前沒有

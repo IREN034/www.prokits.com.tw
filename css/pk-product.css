@@ -232,6 +232,9 @@
 #pkdv .swiper:hover .swiper-button-next:after, #pkdv .swiper:hover .swiper-button-prev:after {
   opacity: 1;
 }
+#pkdv .swiper .img-responsive {
+  margin: 0 auto;
+}
 #pkdv .productDescription {
   padding: 30px 30px 0;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -463,4 +466,9 @@
   background: url("../images/play-icon.svg") no-repeat;
   background-size: contain;
   margin: 0 3px;
+}
+@media (min-width: 1200px) {
+  #pkdv .btn-block {
+    width: 85%;
+  }
 }/*# sourceMappingURL=pk-product.css.map */

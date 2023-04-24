@@ -9,7 +9,7 @@
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-      <link href="/css/pk-product.css" rel="stylesheet" />
+      <link href="/css/pk-classificationt.css" rel="stylesheet" />
 
   </head>
 
@@ -33,11 +33,12 @@
             <div class="row product-row" itemscope itemtype="http://schema.org/Taxon">
 
               <div class="col-xs-12 col-md-3">
-                <!--#include virtual="/component/_tree-simple.asp"-->
+                <!--#include virtual="/component/_sideMenu-simple.asp"-->
               </div>
 
               <div class="col-xs-12 col-md-9">
                 <!--#include virtual="/component/_proList-img-xs-3.asp"-->
+                <!--#include virtual="/component/_pagination.asp"-->
               </div>
 
             </div>

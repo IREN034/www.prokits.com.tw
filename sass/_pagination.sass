@@ -1,0 +1,41 @@
+.pagination
+  display: flex
+  justify-content: flex-end
+  +distanceMP(0,45px 0)
+  text-align: right
+  +fontT-sm(1em)
+  &-icon
+    font-style: normal
+    transform: scaleY(1.5)
+  &-btn
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 30px
+    height: 30px
+    line-height: 30px
+    +distanceMP(0 3px, 0)
+    letter-spacing: -1
+    border: 1px solid $CIScolorLink
+    border-radius: 50%
+    color: $CIScolorLink
+    text-decoration: none
+    &:hover, &:active, &-active
+      background: $CIScolorLink
+      border: 1px solid $CIScolorLink
+      color: $WHITEcolor
+  // .page
+  //   position: relative
+  //   top: 2px
+  //   b
+  //     margin: 0 5px
+  //     color: lighten($BLACKcolor, 20%)
+  //     +fontT-md(1.5rem)
+  //   @media (min-width: $screen-xxs) and (max-width: $screen-sm - 1px)
+  //     display: block
+  // .btn
+  //   background: darken($WHITEcolor, 0%)
+  //   color: darken($WHITEcolor, 100%)
+  //   border: 1px solid darken($WHITEcolor, 18.5%)
+  //   &:hover, &:focus
+  //     +box-shadow(0 0 5px 0 darken($WHITEcolor, 30%))

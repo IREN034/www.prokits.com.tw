@@ -241,10 +241,6 @@ hr {
   box-sizing: content-box;
 }
 
-body {
-  background: #f7f7f7;
-}
-
 @keyframes fixedNavDown {
   0% {
     top: -100px;
@@ -369,8 +365,8 @@ body {
   padding: 5px 10px;
   touch-action: manipulation;
   white-space: nowrap;
-  font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1em;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
   letter-spacing: 0.05em;
   text-align: center;
   border: none;
@@ -461,11 +457,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-}
-@media (min-width: 1200px) {
-  #pkdv .btn-block {
-    width: 85%;
-  }
 }
 #pkdv .btn-block + .btn-block {
   margin-top: 5px;
