@@ -48,6 +48,13 @@
 
     document.getElementById(id).classList.add("navTabs-pane-active");
     item.currentTarget.className += " navTabs-item-active";
+
+    $(document).ready(function () {
+      $('html, body').animate({
+        scrollTop: $('#js-navTabs').offset().top
+      }, 500);
+    });
+
   }
 
   // scrollTop>600 即固定

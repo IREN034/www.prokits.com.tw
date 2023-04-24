@@ -26,7 +26,7 @@
   </div>
 
   <a itemprop="url" class="btn btn-pay btn-block btn-lg" href="#modal-container1" data-toggle="modal">
-    查看詳情<i class="icon-arrow"></i></a>
+    立即購買<i class="icon-arrow"></i></a>
   <a itemprop="url" class="btn btn-keep btn-block btn-lg" href="#modal-container1" data-toggle="modal">
     <i class="icon-cart"></i>新品上架中</a>
   <a itemprop="url" class="btn btn-info btn-block btn-lg" href="#modal-container1" data-toggle="modal">
