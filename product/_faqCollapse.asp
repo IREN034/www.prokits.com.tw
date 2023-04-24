@@ -26,3 +26,21 @@
     </li>
   </ul>
 </section>
+
+<!-- <script>
+  $(function () {
+    // $(".panel").hide(); //預設先隱藏子選單
+    $(".panel-title").click(function () {
+      $(".panel").slideUp();
+      $(".panel-title").removeClass("open");
+      if ($(this).next().css("display") == "none") {
+        $(this).next().slideDown();
+        $(this).addClass("open");
+      }
+    }).mouseover(function () {
+      $(this).addClass("rollover")
+    }).mouseout(function () {
+      $(this).removeClass("rollover")
+    });
+  });
+</script> -->

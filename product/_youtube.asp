@@ -3,8 +3,6 @@
 </div>
 
 <script type="text/javascript">
-
-
   var width = $(".swiper-BigImg").innerWidth()
   var height = $(".swiper-BigImg").innerHeight()
 

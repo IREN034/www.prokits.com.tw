@@ -48,27 +48,6 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-#pkdv .sideMenu {
-  font-size: 1.25em;
-}
-#pkdv .sideMenu-title {
-  color: #6a6a6a;
-}
-#pkdv .sideMenu-link {
-  text-decoration: none;
-}
-#pkdv .sideMenu-content {
-  margin: 20px 0;
-  padding: 0 20px;
-  border-left: 1px solid #c7c7c7;
-}
-#pkdv .sideMenu-content-item {
-  line-height: 1.7em;
-}
-#pkdv .sideMenu-content-item-active {
-  color: #256C53;
-  font-weight: 600;
-}
 #pkdv .proList-item {
   padding: 0 10px 40px;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -157,6 +136,28 @@
   background: #256C53;
   border: 1px solid #256C53;
   color: #ffffff;
+}
+#pkdv .sideMenu {
+  font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+#pkdv .sideMenu-title {
+  color: #6a6a6a;
+}
+#pkdv .sideMenu-list {
+  text-decoration: none;
+}
+#pkdv .sideMenu-content {
+  margin: 20px 0;
+  padding: 0 20px;
+  border-left: 1px solid #c7c7c7;
+}
+#pkdv .sideMenu-content-item {
+  line-height: 1.7em;
+}
+#pkdv .sideMenu-content-item-active {
+  color: #256C53;
+  font-weight: 600;
 }
 #pkdv .icon-arrow {
   display: inline-block;

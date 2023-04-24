@@ -11,7 +11,7 @@
           alt="" />
       </div>
       <div class="swiper-slide">
-        <!-- #include virtual="/product/_youtube.asp" -->
+        <!-- #include virtual="/product/_video.asp" -->
       </div>
       <div class="swiper-slide">
         <img itemprop="contentUrl" src="https://swiperjs.com/demos/images/nature-4.jpg" class="swiper-slide-img"

@@ -349,81 +349,20 @@
 #pkdv .navTabs-pane-title {
   padding-bottom: 30px;
 }
-#pkdv .js-youtube {
+#pkdv .video {
   position: relative;
   margin: 0;
   padding: 0 0 59%;
 }
 @media (min-width: 1200px) {
-  #pkdv .js-youtube {
+  #pkdv .video {
     margin: 0;
     padding: 0 0 59%;
   }
 }
-#pkdv .js-youtube iframe, #pkdv .js-youtube embed, #pkdv .js-youtube object {
+#pkdv .video iframe, #pkdv .video embed, #pkdv .video object {
   position: absolute;
   top: 0;
-}
-#pkdv .js-youtube .block-control {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-#pkdv .js-youtube .control div:first-child {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  position: absolute;
-}
-#pkdv .js-youtube .icon-cross {
-  font-size: 2.475em;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  color: white;
-}
-#pkdv .youtube-title {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  opacity: 0.85;
-  background: black;
-}
-#pkdv .js-youtube-open {
-  width: 100vh;
-  height: 50%;
-  position: fixed;
-  top: 10%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 999999;
-}
-#pkdv .js-youtube-open iframe, #pkdv .js-youtube-open embed, #pkdv .js-youtube-open object {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 10%;
-  margin: 0 auto;
-  width: 80%;
-  height: 80%;
-}
-#pkdv .js-youtube-open .youtube-title {
-  display: none;
-}
-@media (min-width: 290px) and (max-width: 1199px) {
-  #pkdv .openYoutube {
-    width: auto;
-    top: 0;
-  }
-  #pkdv .openYoutube iframe, #pkdv .openYoutube embed, #pkdv .openYoutube object {
-    width: 100%;
-    height: 100%;
-    top: 0;
-  }
 }
 #pkdv .collapse-list {
   background: white;
