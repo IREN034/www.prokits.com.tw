@@ -22,6 +22,22 @@
     top: calc(50% - 20px)
     left: calc(50% - 20px)
     +icon(40px,40px,$icon-play)
+  .icon-new
+    position: absolute
+    top: 20px
+    right: 20px
+    z-index: $zindex-floor
+    +icon(62px,62px,$icon-new)
+    @media (min-width: $screen-lg)
+      right: -31px
+  .icon-recommend
+    position: absolute
+    top: 20px
+    right: 20px
+    z-index: $zindex-floor
+    +icon(62px,62px,$icon-recommend)
+    @media (min-width: $screen-lg)
+      right: -31px
   .btn-block
     @media (min-width: $screen-lg)
       width: 85%

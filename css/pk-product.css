@@ -407,6 +407,40 @@
   background-size: contain;
   margin: 0 3px;
 }
+#pkdv .icon-new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background: url("../images/new-icon.svg") no-repeat;
+  background-size: contain;
+  margin: 0 3px;
+}
+@media (min-width: 1200px) {
+  #pkdv .icon-new {
+    right: -31px;
+  }
+}
+#pkdv .icon-recommend {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background: url("../images/recommend-icon.svg") no-repeat;
+  background-size: contain;
+  margin: 0 3px;
+}
+@media (min-width: 1200px) {
+  #pkdv .icon-recommend {
+    right: -31px;
+  }
+}
 @media (min-width: 1200px) {
   #pkdv .btn-block {
     width: 85%;

@@ -1,6 +1,6 @@
 .proList
   &-item
-    padding: 0 10px 40px
+    padding: 0 25px 53px
     +fontT
     @media (min-width: $screen-sm)
       &:nth-child(2n+1)
@@ -16,17 +16,25 @@
     display: inline-flex
     color: $CIScolorLink
   &-supported
-    display: inline-flex
+    display: flex
+    flex-wrap: wrap
     position: relative
     top: -3px
+    padding: 10px 0
     font-size: $font-size-xs
+    @media (min-width: $screen-lg)
+      display: inline-flex
     &-item
-      display: inline-block
+      display: inline-flex
       +distanceMP(0 2px 2px, 1px 5px)
       line-height: 1.3em
       border-radius: 10px
       background: $CIScolorD
       color: $WHITEcolor
+      &::before
+        position: relative
+        top: 1px
+        content: url('../images/cart-icon.svg')
   &-name
     height: 55px
     overflow: hidden
@@ -35,7 +43,7 @@
     display: -webkit-box
     -webkit-box-orient: vertical
     -webkit-line-clamp: 2
-    margin: 10px 0
+    margin: 0 0 10px
     +fontT-md(1.3em)
     font-weight: 600
   &-link

@@ -1,0 +1,14 @@
+// 核心變數+混合設定
+@import _variables
+@import _minxins
+
+#pkdv
+  @import _breadcrumb
+  @import _wisemanContent
+  @import _social
+  @import _sideMenu
+  .sideMenuDate
+    @include sideMenuDate($CIScolorLink)
+  .sideMenuDate
+    & + .sideMenuDate
+      @include sideMenuDate(#0097DA)

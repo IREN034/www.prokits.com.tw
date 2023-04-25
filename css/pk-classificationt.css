@@ -31,6 +31,13 @@
   font-size: 2em;
   opacity: 0;
 }
+#pkdv .swiper-pagination-bullet {
+  width: 47px;
+  height: 4px;
+  border-radius: 0;
+  background: #ffffff;
+  opacity: 0.7;
+}
 #pkdv .swiper-pagination-bullet-active {
   background: #256C53;
 }
@@ -39,7 +46,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #fff;
+  background: #ffffff;
 }
 #pkdv .swiper-slide-img {
   display: block;
@@ -49,7 +56,7 @@
      object-fit: cover;
 }
 #pkdv .proList-item {
-  padding: 0 10px 40px;
+  padding: 0 25px 53px;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
 }
@@ -74,19 +81,31 @@
   color: #256C53;
 }
 #pkdv .proList-supported {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   top: -3px;
+  padding: 10px 0;
   font-size: 0.7em;
 }
+@media (min-width: 1200px) {
+  #pkdv .proList-supported {
+    display: inline-flex;
+  }
+}
 #pkdv .proList-supported-item {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 2px 2px;
   padding: 1px 5px;
   line-height: 1.3em;
   border-radius: 10px;
   background: #83A186;
   color: #ffffff;
+}
+#pkdv .proList-supported-item::before {
+  position: relative;
+  top: 1px;
+  content: url("../images/cart-icon.svg");
 }
 #pkdv .proList-name {
   height: 55px;
@@ -96,7 +115,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  margin: 10px 0;
+  margin: 0 0 10px;
   font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.3em;
   font-weight: 600;
@@ -174,4 +193,40 @@
   background: url("../images/cart-icon.svg") no-repeat;
   background-size: contain;
   margin: 0 3px;
+}
+#pkdv .icon-new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url("../images/new-icon.svg") no-repeat;
+  background-size: contain;
+  margin: 0 3px;
+}
+@media (min-width: 1200px) {
+  #pkdv .icon-new {
+    top: -18px;
+    left: -5px;
+  }
+}
+#pkdv .icon-recommend {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url("../images/recommend-icon.svg") no-repeat;
+  background-size: contain;
+  margin: 0 3px;
+}
+@media (min-width: 1200px) {
+  #pkdv .icon-recommend {
+    top: -18px;
+    left: -5px;
+  }
 }/*# sourceMappingURL=pk-classificationt.css.map */

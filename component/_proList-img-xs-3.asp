@@ -14,6 +14,7 @@
       <a itemprop="url" class="btn btn-pay btn-block" href="#modal-container1" data-toggle="modal">
          立即購買<i class="icon-arrow"></i></a>
       </a>
+      <i class="icon-new"></i>
    </div>
    <div class="col-xs-12 col-sm-6 col-lg-4 proList-item">
       <a itemprop="url" href="#modal-container1" data-toggle="modal" class="proList-link">
@@ -30,6 +31,7 @@
       <a itemprop="url" class="btn btn-pay btn-block" href="#modal-container1" data-toggle="modal">
          立即購買<i class="icon-arrow"></i></a>
       </a>
+      <i class="icon-recommend"></i>
    </div>
    <div class="col-xs-12 col-sm-6 col-lg-4 proList-item">
       <a itemprop="url" href="#modal-container1" data-toggle="modal" class="proList-link">

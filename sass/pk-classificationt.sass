@@ -5,10 +5,32 @@
 #pkdv
   @import _breadcrumb
   @import _BLB-ring
-  @import _sideMenu
   @import _proList
   @import _pagination
+
+  @import _sideMenu
+  .sideMenu
+    @include sideMenu
+
   .icon-arrow
     +icon(16px,16px,$icon-arrow)
   .icon-cart
     +icon(16px,16px,$icon-cart)
+  .icon-new
+    position: absolute
+    top: 10px
+    left: 10px
+    z-index: $zindex-floor
+    +icon(48px,48px,$icon-new)
+    @media (min-width: $screen-lg)
+      top: -18px
+      left: -5px
+  .icon-recommend
+    position: absolute
+    top: 10px
+    left: 10px
+    z-index: $zindex-floor
+    +icon(48px,48px,$icon-recommend)
+    @media (min-width: $screen-lg)
+      top: -18px
+      left: -5px

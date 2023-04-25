@@ -83,6 +83,8 @@
     </div>
   </div>
 
+  <i class="icon-recommend"></i>
+  <!-- <i class="icon-new"></i> -->
 </div>
 
 <script>
