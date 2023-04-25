@@ -1,8 +1,8 @@
-.sideMenu
-  font-size: $font-size-md
+@mixin sideMenu
+  +fontT-md
   &-title
     color: darken($WHITEcolor, 58.5%)
-  &-link
+  &-list
     text-decoration: none
   &-content
     +distanceMP(20px 0, 0 20px)
@@ -12,3 +12,42 @@
       &-active
         color: $CIScolorLink
         font-weight: 600
+
+@mixin sideMenuDate($color)
+  margin-bottom: 50px
+  +fontT
+  &-title
+    font-size: $font-size-md
+    color: darken($WHITEcolor, 58.5%)
+  &-item
+    display: flex
+    align-items: center
+    text-decoration: none
+    padding-bottom: 20px
+  &-content
+    +distanceMP(20px 10px 0 0, 0 20px 0 0)
+    &-title
+      line-height: 1.3em
+  &-date
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    flex-flow: column
+    flex: 0 0 45px
+    width: 45px
+    height: 45px
+    +distanceMP(0 15px 0 0,5px)
+    outline: 2px solid darken($WHITEcolor, 0%)
+    text-align: center
+    line-height: 0.85em
+  &-day
+    padding-top: 2px
+    font-size: $font-size-sm
+    font-family: $font-family-en
+  &-moon
+    font-size: $font-size-xs
+  &-year
+    font-size: $font-size-xs
+  .sideMenuDate-style
+    outline-color: $color
+    color: $color

@@ -1,0 +1,247 @@
+@charset "UTF-8";
+#pkdv .breadcrumb {
+  padding: 20px 0;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+#pkdv .breadcrumb > li {
+  display: inline-block;
+}
+#pkdv .breadcrumb > li + li:before {
+  padding: 0 5px;
+  content: "/";
+  color: #7c7c7c;
+}
+#pkdv .breadcrumb-link {
+  text-decoration: none;
+  color: #7c7c7c;
+}
+#pkdv .breadcrumb-active {
+  color: #373737;
+}
+#pkdv .wiseman-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  padding: 0 20px;
+  font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 1200px) {
+  #pkdv .wiseman-content {
+    padding: 0 0 0 30px;
+    border-left: 1px solid #e6e6e6;
+  }
+}
+#pkdv .wiseman-content-title {
+  flex: 0 0 100%;
+  order: 1;
+  margin-bottom: 30px;
+  font-size: 1.375em;
+  color: #256C53;
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  #pkdv .wiseman-content-title {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 10px;
+    font-size: 1.875em;
+    border-left: 8px solid #d9d9d9;
+  }
+}
+#pkdv .wiseman-content-doorTimeHeader {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  order: 2;
+  font-size: 1.25em;
+  color: #737373;
+}
+@media (min-width: 1200px) {
+  #pkdv .wiseman-content-doorTimeHeader {
+    padding: 0 20px;
+  }
+}
+#pkdv .wiseman-content-doorTimeFooter {
+  display: block;
+  flex: 0 0 100%;
+  order: 5;
+  padding: 20px 0;
+  text-align: right;
+  color: #737373;
+}
+@media (min-width: 1200px) {
+  #pkdv .wiseman-content-doorTimeFooter {
+    padding: 0 20px;
+    border-right: 8px solid #d9d9d9;
+  }
+}
+#pkdv .wiseman-content-social {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  order: 6;
+}
+@media (min-width: 1200px) {
+  #pkdv .wiseman-content-social {
+    flex: 0 0 200px;
+    order: 4;
+  }
+}
+#pkdv .wiseman-content-desc {
+  order: 5;
+  padding: 30px 0;
+}
+@media (min-width: 1200px) {
+  #pkdv .wiseman-content-desc {
+    padding: 30px 0 30px 20px;
+  }
+}
+#pkdv .wiseman-content-desc img {
+  margin: 0 auto;
+}
+#pkdv .social {
+  line-height: 32px;
+  touch-action: manipulation;
+  outline: 0;
+}
+#pkdv .social-item {
+  padding: 0 2px;
+  float: left;
+  line-height: 16px;
+  cursor: pointer;
+}
+#pkdv .social-img {
+  display: block;
+  padding: 0;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  float: left;
+  border-radius: 4px;
+}
+#pkdv .social-svg {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+#pkdv .social-name {
+  position: absolute !important;
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+}
+#pkdv .sideMenuDate {
+  margin-bottom: 50px;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+}
+#pkdv .sideMenuDate-title {
+  font-size: 1.25em;
+  color: #6a6a6a;
+}
+#pkdv .sideMenuDate-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+#pkdv .sideMenuDate-content {
+  margin: 20px 10px 0 0;
+  padding: 0 20px 0 0;
+}
+#pkdv .sideMenuDate-content-title {
+  line-height: 1.3em;
+}
+#pkdv .sideMenuDate-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+  margin: 0 15px 0 0;
+  padding: 5px;
+  outline: 2px solid white;
+  text-align: center;
+  line-height: 0.85em;
+}
+#pkdv .sideMenuDate-day {
+  padding-top: 2px;
+  font-size: 0.9em;
+  font-family: futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#pkdv .sideMenuDate-moon {
+  font-size: 0.7em;
+}
+#pkdv .sideMenuDate-year {
+  font-size: 0.7em;
+}
+#pkdv .sideMenuDate .sideMenuDate-style {
+  outline-color: #256C53;
+  color: #256C53;
+}
+#pkdv .sideMenuDate + .sideMenuDate {
+  margin-bottom: 50px;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+}
+#pkdv .sideMenuDate + .sideMenuDate-title {
+  font-size: 1.25em;
+  color: #6a6a6a;
+}
+#pkdv .sideMenuDate + .sideMenuDate-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+#pkdv .sideMenuDate + .sideMenuDate-content {
+  margin: 20px 10px 0 0;
+  padding: 0 20px 0 0;
+}
+#pkdv .sideMenuDate + .sideMenuDate-content-title {
+  line-height: 1.3em;
+}
+#pkdv .sideMenuDate + .sideMenuDate-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+  margin: 0 15px 0 0;
+  padding: 5px;
+  outline: 2px solid white;
+  text-align: center;
+  line-height: 0.85em;
+}
+#pkdv .sideMenuDate + .sideMenuDate-day {
+  padding-top: 2px;
+  font-size: 0.9em;
+  font-family: futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#pkdv .sideMenuDate + .sideMenuDate-moon {
+  font-size: 0.7em;
+}
+#pkdv .sideMenuDate + .sideMenuDate-year {
+  font-size: 0.7em;
+}
+#pkdv .sideMenuDate + .sideMenuDate .sideMenuDate-style {
+  outline-color: #0097DA;
+  color: #0097DA;
+}/*# sourceMappingURL=pk-wisemanContent.css.map */
