@@ -30,7 +30,7 @@
             <!--#include virtual="/component/_breadcrumb.asp"-->
 
 
-            <div class="row product-row" itemscope itemtype="http://schema.org/Taxon">
+            <div class="row" itemscope itemtype="http://schema.org/Taxon">
 
               <div class="col-xs-12 col-md-9 col-md-push-3">
                 <!--#include virtual="/component/_proList-img-xs-3.asp"-->

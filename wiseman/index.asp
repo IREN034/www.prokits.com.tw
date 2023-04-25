@@ -21,26 +21,25 @@
       <!-- productInfo -->
       <div class="container-full">
 
-        <div class="container">
+        <div class="container wiseman">
 
-          <!-- 麵包屑 -->
-          <%breadcrumb=["主題類別","分類名稱"] %>
-            <!--#include virtual="/component/_breadcrumb.asp"-->
+          <div class="row wisemanImmed" itemscope itemtype="http://schema.org/Event">
+            <!-- immed project -->
+            <h2 class="wiseman-title">活動進行中>>></h2>
+            <!--#include virtual="/wiseman/_wisemanImmed.asp"-->
 
+            <!-- no project -->
+            <img src="/images/noActivity.svg" srcset="/images/noActivity.svg" alt="大量採購" draggable="false"
+              class="img-responsive" />
 
-            <div class="row product-row" itemscope itemtype="http://schema.org/Event">
+          </div>
 
-              <div class="col-xs-12 col-md-9 col-md-push-3">
+          <div class="wisemanExp">
+            <h2 class="wiseman-title">活動紀錄</h2>
+            <!--#include virtual="/component/_dropdown.asp"-->
+            <!--#include virtual="/wiseman/_wisemanExp.asp"-->
+          </div>
 
-              </div>
-
-              <div class="col-xs-12 col-md-3 col-md-pull-9">
-
-              </div>
-
-
-
-            </div>
 
         </div>
 

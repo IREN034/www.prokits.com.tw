@@ -379,6 +379,9 @@ hr {
 #pkdv .btn.disabled, #pkdv .btn[disabled], fieldset[disabled] #pkdv .btn {
   cursor: not-allowed;
 }
+#pkdv .btn + .btn {
+  margin-left: 10px;
+}
 #pkdv .btn-pay {
   background: #E7B506;
   color: white;

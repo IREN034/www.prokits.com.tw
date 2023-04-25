@@ -5,3 +5,71 @@
 #pkdv
   @import _breadcrumb
   @import _pagination
+  @import _dropdown
+  .wiseman
+    &-title
+      padding: 0 0 10px
+      font-size: $font-size-lg
+      font-weight: 600
+      color: darken($WHITEcolor, 89%)
+    .img-responsive
+      margin: 0 auto
+  .wisemanImmed
+    margin-bottom: 50px
+    padding-bottom: 50px
+    border-bottom: 3px dashed #FFBA35
+    &-list
+      background: #FFF3E8
+      margin: 0 0 50px
+      @media (min-width: $screen-lg)
+        display: flex
+    &-txt
+      display: flex
+      flex-direction: column
+      justify-content: center
+      line-height: 2.5em
+      padding: 20px 30px
+      font-size: $font-size-md
+    &-name
+      margin-bottom: 10px
+      padding-bottom: 10px
+      font-size: 1.5em
+      font-weight: 600
+      border-bottom: 1px solid darken($WHITEcolor, 41%)
+    &-info
+      line-height: 1.3em
+    &-btn
+      display: flex
+      justify-content: flex-end
+      margin-top: 20px
+      .btn
+        border-radius: 0
+
+  .wisemanExp
+    position: relative
+    &-list
+      padding: 25px 15px 50px
+      text-decoration: none
+    &-title
+      padding: 10px 0
+      color: $CIScolorLink
+      font-size: $font-size-md
+      font-weight: 600
+    &-info
+      margin-bottom: 10px
+      height: 45px
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      -webkit-line-clamp: 2
+      color: darken($WHITEcolor, 60%)
+    &-time
+      display: flex
+      justify-content: flex-end
+      color: darken($WHITEcolor, 43%)
+
+  .dropdown
+    position: absolute
+    right: 0
+    top: 0

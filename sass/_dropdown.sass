@@ -1,0 +1,37 @@
+.dropdown
+  position: relative
+  &-toggle
+    display: flex
+    align-items: center
+    border-radius: 10px
+    background: #83A186
+    color: darken($WHITEcolor, 0%)
+  &-menu
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: $zindex-floor
+    display: none
+    float: left
+    +distanceMP(2px 0 0, 5px 0)
+    text-align: left
+    list-style: none
+    background-color: darken($WHITEcolor, 0%)
+    background-clip: padding-box
+    font-size: $font-size-md
+    line-height: $font-size-md
+    border: 1px solid darken($WHITEcolor, 10%)
+    border-radius: 10px
+  &-item
+    display: block
+    padding: 3px 20px
+    clear: both
+    font-weight: 400
+    text-decoration: none
+    white-space: nowrap
+
+  &.open>.dropdown-menu
+    display: block
+
+.icon-arrowDown
+  +icon(15px,15px,$icon-arrowDown)

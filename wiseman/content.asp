@@ -37,7 +37,7 @@
                   <h3 itemprop="attendee">臺北科技大學第412期校友會刊</h3>
                 </div>
                 <div class="wiseman-content-social">
-                  <!--#include virtual="/wiseman/_social.html"-->
+                  <!--#include virtual="/component/_social.html"-->
                 </div>
 
                 <div class="wiseman-content-desc" itemprop="description">

@@ -51,4 +51,133 @@
   background: #256C53;
   border: 1px solid #256C53;
   color: #ffffff;
+}
+#pkdv .dropdown {
+  position: relative;
+}
+#pkdv .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: #83A186;
+  color: white;
+}
+#pkdv .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  display: none;
+  float: left;
+  margin: 2px 0 0;
+  padding: 5px 0;
+  text-align: left;
+  list-style: none;
+  background-color: white;
+  background-clip: padding-box;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+#pkdv .dropdown-item {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#pkdv .dropdown.open > .dropdown-menu {
+  display: block;
+}
+#pkdv .icon-arrowDown {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/arrowDown-icon.svg") no-repeat;
+  background-size: contain;
+  margin: 0 3px;
+}
+#pkdv .wiseman-title {
+  padding: 0 0 10px;
+  font-size: 1.875em;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+#pkdv .wiseman .img-responsive {
+  margin: 0 auto;
+}
+#pkdv .wisemanImmed {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 3px dashed #FFBA35;
+}
+#pkdv .wisemanImmed-list {
+  background: #FFF3E8;
+  margin: 0 0 50px;
+}
+@media (min-width: 1200px) {
+  #pkdv .wisemanImmed-list {
+    display: flex;
+  }
+}
+#pkdv .wisemanImmed-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2.5em;
+  padding: 20px 30px;
+  font-size: 1.25em;
+}
+#pkdv .wisemanImmed-name {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #969696;
+}
+#pkdv .wisemanImmed-info {
+  line-height: 1.3em;
+}
+#pkdv .wisemanImmed-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+#pkdv .wisemanImmed-btn .btn {
+  border-radius: 0;
+}
+#pkdv .wisemanExp {
+  position: relative;
+}
+#pkdv .wisemanExp-list {
+  padding: 25px 15px 50px;
+  text-decoration: none;
+}
+#pkdv .wisemanExp-title {
+  padding: 10px 0;
+  color: #256C53;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+#pkdv .wisemanExp-info {
+  margin-bottom: 10px;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666666;
+}
+#pkdv .wisemanExp-time {
+  display: flex;
+  justify-content: flex-end;
+  color: #919191;
+}
+#pkdv .dropdown {
+  position: absolute;
+  right: 0;
+  top: 0;
 }/*# sourceMappingURL=pk-wiseman.css.map */
