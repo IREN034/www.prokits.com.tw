@@ -19,8 +19,6 @@
   &[disabled],
   fieldset[disabled] &
     cursor: not-allowed
-  & + .btn
-    margin-left: 10px
 //立即
 .btn-pay
   background: $CIScolorC
@@ -71,6 +69,8 @@
   display: inline-block
   position: relative
   vertical-align: middle
+  .btn + .btn
+    margin-left: 10px
 .btn-lg,
 .btn-group-lg > .btn
   padding: 12px 20px
@@ -90,15 +90,3 @@
 
 .btn-block + .btn-block
   margin-top: 5px
-
-.close
-  cursor: pointer
-  background: none
-  border: none
-
-// input[type="submit"],
-// input[type="reset"],
-// input[type="button"]
-//   padding: 5px
-//   &.btn-block
-//     width: 100%

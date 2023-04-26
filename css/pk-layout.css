@@ -379,9 +379,6 @@ hr {
 #pkdv .btn.disabled, #pkdv .btn[disabled], fieldset[disabled] #pkdv .btn {
   cursor: not-allowed;
 }
-#pkdv .btn + .btn {
-  margin-left: 10px;
-}
 #pkdv .btn-pay {
   background: #E7B506;
   color: white;
@@ -442,6 +439,9 @@ hr {
   position: relative;
   vertical-align: middle;
 }
+#pkdv .btn-group .btn + .btn {
+  margin-left: 10px;
+}
 #pkdv .btn-lg,
 #pkdv .btn-group-lg > .btn {
   padding: 12px 20px;
@@ -463,9 +463,4 @@ hr {
 }
 #pkdv .btn-block + .btn-block {
   margin-top: 5px;
-}
-#pkdv .close {
-  cursor: pointer;
-  background: none;
-  border: none;
 }/*# sourceMappingURL=pk-layout.css.map */

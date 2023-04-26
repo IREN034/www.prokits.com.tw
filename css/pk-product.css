@@ -351,18 +351,15 @@
 }
 #pkdv .video {
   position: relative;
-  margin: 0;
-  padding: 0 0 59%;
-}
-@media (min-width: 1200px) {
-  #pkdv .video {
-    margin: 0;
-    padding: 0 0 59%;
-  }
 }
 #pkdv .video iframe, #pkdv .video embed, #pkdv .video object {
   position: absolute;
   top: 0;
+}
+#pkdv .video-img {
+  position: relative;
+  z-index: 9;
+  pointer-events: none;
 }
 #pkdv .collapse-list {
   background: white;
@@ -398,11 +395,11 @@
 }
 #pkdv .icon-play {
   position: absolute;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: url("../images/play-icon.svg") no-repeat;
   background-size: contain;
   margin: 0 3px;

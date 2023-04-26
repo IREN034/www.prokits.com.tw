@@ -1,8 +1,9 @@
 .video
   position: relative
-  +distanceMP(0,0 0 59%)
-  @media (min-width: $screen-lg)
-    +distanceMP(0,0 0 59%)
   iframe, embed, object
     position: absolute
     top: 0
+  &-img
+    position: relative
+    z-index: $zindex-floor
+    pointer-events: none
