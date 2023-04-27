@@ -530,11 +530,11 @@ hr {
 }
 #pkdv .btn-pay {
   background: #E7B506;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 #pkdv .btn-pay:hover, #pkdv .btn-pay:focus {
-  color: white;
+  color: black;
   background: #f9cb27;
   -pie-background: #f9cb27;
 }

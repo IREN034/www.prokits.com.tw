@@ -27,7 +27,7 @@
 
   <div>
     <a itemprop="url" class="btn btn-pay btn-block btn-lg" href="/" data-toggle="modal">
-      立即購買<i class="icon-arrow"></i></a>
+      立即購買<i class="icon-arrowBlack"></i></a>
   </div>
 
   <div>

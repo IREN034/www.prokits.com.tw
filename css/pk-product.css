@@ -403,6 +403,14 @@
   background-size: contain;
   margin: 0 3px;
 }
+#pkdv .icon-arrowBlack {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/arrowBlack-icon.svg") no-repeat;
+  background-size: contain;
+  margin: 0 3px;
+}
 #pkdv .icon-cart {
   display: inline-block;
   width: 24px;
