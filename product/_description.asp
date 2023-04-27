@@ -25,20 +25,40 @@
     <a href="" class="productDescription-keywords-item">益智</a>
   </div>
 
-  <a itemprop="url" class="btn btn-pay btn-block btn-lg" href="#modal-container1" data-toggle="modal">
-    立即購買<i class="icon-arrow"></i></a>
-  <a itemprop="url" class="btn btn-keep btn-block btn-lg" href="#modal-container1" data-toggle="modal">
-    <i class="icon-cart"></i>新品上架中</a>
-  <a itemprop="url" class="btn btn-info btn-block btn-lg" href="#modal-container1" data-toggle="modal">
-    <i class="icon-cart"></i>補貨中</a>
-  <a itemprop="url" class="btn btn-out btn-block btn-lg" href="#modal-container1" data-toggle="modal">
-    已售完，請查看取代品<i class="icon-arrow"></i></a>
-  <%modal=["Information", "產品上架處理中，請洽02-2218-3233分機329取得更多資訊，謝謝!!" ] %>
-    <!--#include virtual="/component/_modal.asp"-->
+  <div>
+    <a itemprop="url" class="btn btn-pay btn-block btn-lg" href="/" data-toggle="modal">
+      立即購買<i class="icon-arrow"></i></a>
+  </div>
 
-    <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
-      <div itemprop="author" itemtype="https://schema.org/Organization" itemscope>
-        <meta itemprop="name" content="prokits" />
-      </div>
+  <div>
+    <div class="productDescription-btnInfo">產品上架處理中，請洽02-2218-3233分機329 <br />
+      取得更多資訊，謝謝！</div>
+    <a itemprop="url" class="btn btn-keep btn-block btn-lg" href="#modal-container1" data-toggle="modal">
+      與寶工聯繫<i class="icon-arrow"></i></a>
+  </div>
+
+  <div>
+    <div class="productDescription-btnInfo">此商品已售完，以下請參考取替代商品。
+      <a href="" class="productDescription-btnInfo-item">
+        SD-9827M 【多功能精密維修起子組】
+      </a>
+      <a href="" class="productDescription-btnInfo-item">
+        SD-9827M 【多功能精密維修起子組】
+      </a>
+      <a href="" class="productDescription-btnInfo-item">
+        SD-9827M 【多功能精密維修起子組】
+      </a>
+      如您有其他疑問，請點選以下按鈕與我們聯繫，謝謝！
     </div>
+    <a itemprop="url" class="btn btn-keep btn-block btn-lg" href="#modal-container1" data-toggle="modal">
+      與寶工聯繫<i class="icon-arrow"></i></a>
+  </div>
+
+  <!--#include virtual="/component/_modal.asp"-->
+
+  <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+    <div itemprop="author" itemtype="https://schema.org/Organization" itemscope>
+      <meta itemprop="name" content="prokits" />
+    </div>
+  </div>
 </div>

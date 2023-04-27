@@ -10,9 +10,12 @@
   @import _navTabs
   @import _video
   @import _collapse
-
+  // @import _iconTxt
   .product-row
     padding-bottom: 50px
+
+  .icon-send
+    +icon(24px,24px,$icon-send)
   .icon-arrow
     +icon(24px,24px,$icon-arrow)
   .icon-cart
@@ -22,22 +25,12 @@
     top: calc(50% - 15px)
     left: calc(50% - 15px)
     +icon(30px,30px,$icon-play)
-  .icon-new
-    position: absolute
-    top: 20px
-    right: 20px
-    z-index: $zindex-floor
-    +icon(62px,62px,$icon-new)
+  .iconTxt
+    +iconTxt(62px)
+
     @media (min-width: $screen-lg)
-      right: -31px
-  .icon-recommend
-    position: absolute
-    top: 20px
-    right: 20px
-    z-index: $zindex-floor
-    +icon(62px,62px,$icon-recommend)
-    @media (min-width: $screen-lg)
-      right: -31px
+      +iconTxt(62px)
+
   .btn-block
     @media (min-width: $screen-lg)
       width: 85%

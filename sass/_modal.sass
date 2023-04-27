@@ -65,32 +65,21 @@
   opacity: .7
   filter: alpha(opacity=70)
 .modal-header
-  padding: 15px
+  padding: 0 0 25px
   border-bottom: 1px solid darken($WHITEcolor, 10.3%)
   background: darken($WHITEcolor, 0%)
   text-align: center
 .modal-body
   position: relative
-  padding: 20px
-  font-size: $font-size-md
-  line-height: $font-size-md
-
-// Footer (for actions)
-.modal-footer
-  padding: 19px 20px 20px
-  margin-top: 15px
-  text-align: right
-  border-top: 1px solid darken($WHITEcolor, 10.3%)
-.modal-footer:before, .modal-footer:after
-  display: table
-  content: " "
-.modal-footer:after
-  clear: both
-.modal-footer:before, .modal-footer:after
-  display: table
-  content: " "
-.modal-footer:after
-  clear: both
+  padding: 20px 0 0
+  form
+    padding: 30px 0 0
+    .form-group
+      .col-xs-12
+        padding: 5px 0
+    .btn-group
+      justify-content: flex-end
+      margin-top: 10px
 
 .modal-title
   font-size: $font-size-lg
@@ -99,7 +88,7 @@
 @media screen and (min-width:768px)
   .modal-dialog
     width: 600px
-    margin: 300px auto
+    margin: 200px auto
   .modal-content
     -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5)
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5)

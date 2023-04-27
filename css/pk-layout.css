@@ -360,8 +360,157 @@ hr {
   color: #fa3434;
   background: white;
 }
-#pkdv .btn {
+#pkdv fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+#pkdv legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  line-height: inherit;
+  color: black;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+#pkdv input {
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+}
+#pkdv input[type=radio],
+#pkdv input[type=checkbox] {
+  margin: 4px 0 0;
+  margin-top: 1px \9 ;
+  line-height: normal;
+  vertical-align: middle;
+  display: none;
+}
+#pkdv input[type=checkbox] + label, #pkdv input[type=radio] + label {
+  cursor: pointer;
   display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
+#pkdv input[type=checkbox] + label {
+  background: url(../images/check.svg) 0 0 no-repeat;
+}
+#pkdv input[type=radio] + label {
+  background: url(../images/radio.svg) 0 0 no-repeat;
+}
+#pkdv input[type=checkbox]:checked + label {
+  background: url(../images/check.svg) -20px 0 no-repeat;
+}
+#pkdv input[type=radio]:checked + label {
+  background: url(../images/radio.svg) -20px 0 no-repeat;
+}
+#pkdv input[type=file]:focus,
+#pkdv input[type=radio]:focus,
+#pkdv input[type=checkbox]:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#pkdv .form-group:before, #pkdv .form-group:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+#pkdv .form-control {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  color: black;
+  background: white;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#pkdv .form-control:focus, #pkdv .form-control:hover {
+  box-shadow: 0 0 5px 0 #dddddd;
+  border: 1px solid #dddddd;
+  outline: none;
+}
+#pkdv .form-control[disabled], #pkdv .form-control[readonly], fieldset[disabled] #pkdv .form-control {
+  background: #e6e6e6;
+  opacity: 1;
+  cursor: not-allowed;
+}
+#pkdv .form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+#pkdv .form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+#pkdv .form-inline .input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+#pkdv .form-inline .input-group .input-group-addon,
+#pkdv .form-inline .input-group .input-group-btn,
+#pkdv .form-inline .input-group .form-control {
+  width: auto;
+}
+#pkdv .form-inline .input-group > .form-control {
+  width: 100%;
+}
+#pkdv::-webkit-input-placeholder {
+  color: #cccccc;
+}
+#pkdv::-moz-input-placeholder {
+  color: #cccccc;
+}
+#pkdv::-ms-input-placeholder {
+  color: #cccccc;
+}
+#pkdv::-o-input-placeholder {
+  color: #cccccc;
+}
+#pkdv::input-placeholder {
+  color: #cccccc;
+}
+#pkdv input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+#pkdv input:focus::-moz-input-placeholder {
+  opacity: 0.5;
+}
+#pkdv input:focus::-ms-input-placeholder {
+  opacity: 0.5;
+}
+#pkdv input:focus::-o-input-placeholder {
+  opacity: 0.5;
+}
+#pkdv input:focus::input-placeholder {
+  opacity: 0.5;
+}
+#pkdv .has-feedback {
+  position: relative;
+}
+#pkdv .has-success {
+  background: #256C53;
+}
+#pkdv .has-warning {
+  background: #fa3434;
+}
+#pkdv .has-error {
+  color: #fa3434;
+}
+#pkdv .help-block {
+  display: block;
+  margin: 5px 0 10px;
+  color: black;
+}
+#pkdv .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px 10px;
   touch-action: manipulation;
   white-space: nowrap;
@@ -399,16 +548,6 @@ hr {
   background: #39a57f;
   -pie-background: #39a57f;
 }
-#pkdv .btn-info {
-  background: #DA9D7B;
-  color: white;
-  text-decoration: none;
-}
-#pkdv .btn-info:hover, #pkdv .btn-info:focus {
-  color: white;
-  background: #dea98b;
-  -pie-background: #dea98b;
-}
 #pkdv .btn-out {
   background: #878787;
   color: white;
@@ -421,8 +560,8 @@ hr {
 }
 #pkdv .btn-link {
   padding: 5px;
-  background: linear-gradient(#da9d7b, #d48e67);
-  -pie-background: linear-gradient(#da9d7b, #d48e67);
+  background: linear-gradient(#256c53, #1e5944);
+  -pie-background: linear-gradient(#256c53, #1e5944);
   behavior: url(/pie/PIE.htc);
   color: white;
   font: 0.9em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -430,12 +569,12 @@ hr {
   letter-spacing: -0.05px;
 }
 #pkdv .btn-link:hover, #pkdv .btn-link:focus {
-  background: #d48e67;
-  -pie-background: #d48e67;
-  box-shadow: 0 0 5px 0 #da9d7b;
+  background: #1e5944;
+  -pie-background: #1e5944;
+  box-shadow: 0 0 5px 0 #256c53;
 }
 #pkdv .btn-group {
-  display: inline-block;
+  display: flex;
   position: relative;
   vertical-align: middle;
 }
@@ -456,9 +595,6 @@ hr {
   padding: 1px 5px;
 }
 #pkdv .btn-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 #pkdv .btn-block + .btn-block {

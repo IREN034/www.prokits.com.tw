@@ -83,8 +83,7 @@
     </div>
   </div>
 
-  <i class="icon-recommend"></i>
-  <!-- <i class="icon-new"></i> -->
+  <!-- #include virtual="/component/_iconTxt.asp" -->
 </div>
 
 <script>

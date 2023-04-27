@@ -1,5 +1,7 @@
 .btn
-  display: inline-block
+  display: inline-flex
+  align-items: center
+  justify-content: center
   padding: 5px 10px
   touch-action: manipulation
   white-space: nowrap
@@ -21,13 +23,13 @@
     cursor: not-allowed
 //立即
 .btn-pay
-  background: $CIScolorC
+  background: $CIScolorB
   color: darken($WHITEcolor, 0%)
   text-decoration: none
   &:hover, &:focus
     color: darken($WHITEcolor, 0%)
-    background: lighten($CIScolorC, 10%)
-    -pie-background: lighten($CIScolorC, 10%)
+    background: lighten($CIScolorB, 10%)
+    -pie-background: lighten($CIScolorB, 10%)
 //繼續
 .btn-keep
   background: $CIScolorA
@@ -37,15 +39,6 @@
     color: darken($WHITEcolor, 0%)
     background: lighten($CIScolorA, 15%)
     -pie-background: lighten($CIScolorA, 15%)
-//訊息
-.btn-info
-  background: $CIScolorB
-  color: darken($WHITEcolor, 0%)
-  text-decoration: none
-  &:hover, &:focus
-    color: darken($WHITEcolor, 0%)
-    background: lighten($CIScolorB, 4%)
-    -pie-background: lighten($CIScolorB, 4%)
 //離開
 .btn-out
   background: darken($WHITEcolor, 47%)
@@ -57,16 +50,16 @@
     -pie-background: darken($WHITEcolor, 35%)
 .btn-link
   padding: 5px
-  +linearGradient(linear-gradient(darken($CIScolorB, 0%), darken($CIScolorB, 5%)))
+  +linearGradient(linear-gradient(darken($CIScolorLink, 0%), darken($CIScolorLink, 5%)))
   color: darken($WHITEcolor, 0%)
   +fontT-sm
   letter-spacing: -0.05px
   &:hover, &:focus
-    background: darken($CIScolorB, 5%)
-    -pie-background: darken($CIScolorB, 5%)
-    +box-shadow(0 0 5px 0 darken($CIScolorB, 0%))
+    background: darken($CIScolorLink, 5%)
+    -pie-background: darken($CIScolorLink, 5%)
+    +box-shadow(0 0 5px 0 darken($CIScolorLink, 0%))
 .btn-group
-  display: inline-block
+  display: flex
   position: relative
   vertical-align: middle
   .btn + .btn
@@ -83,9 +76,6 @@
   padding: 1px 5px
 
 .btn-block
-  display: flex
-  align-items: center
-  justify-content: center
   width: 100%
 
 .btn-block + .btn-block

@@ -141,7 +141,6 @@
   line-height: 1.3em;
 }
 #pkdv .wisemanImmed-btn {
-  display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }

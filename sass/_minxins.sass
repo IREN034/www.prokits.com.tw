@@ -116,3 +116,23 @@
 	background: $background
 	background-size: contain
 	margin: 0 3px
+
+@mixin iconTxt($widthHeight: 24px )
+	display: inline-flex
+	justify-content: center
+	position: absolute
+	top: 31px
+	right: calc( $widthHeight / 2 )
+	z-index: $zindex-floor
+	min-width: $widthHeight
+	height: $widthHeight
+	line-height: $widthHeight
+	padding: 0 5px
+	@media (min-width: $screen-lg)
+		top: 31px
+		right: calc( $widthHeight / -2 )
+	&-recommend
+		background: #FF0000
+		color: #fff
+	&-new
+		background: #FFE000
