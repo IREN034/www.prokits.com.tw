@@ -4,12 +4,10 @@
       <a href="#" title="大量採購">
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="https://ref.prokits.com.tw/PKWeb/Adv/227/202302101457439539.jpg" media="(min-width: 768px)">
-          <source srcset="https://ref.prokits.com.tw/PKWeb/Adv/227/202302101457439539.jpg" media="(max-width: 768px)">
+          <source srcset="/images/BLB-lg.jpg" media="(min-width: 768px)">
+          <source srcset="/images/BLB-xs.png" media="(max-width: 768px)">
           <!--[if IE 9]></video><![endif]-->
-          <img src="https://ref.prokits.com.tw/PKWeb/Adv/227/202302101457439539.jpg"
-            srcset="https://ref.prokits.com.tw/PKWeb/Adv/227/202302101457439539.jpg" alt="大量採購" draggable="false"
-            class="img-responsive">
+          <img src="/images/BLB-lg.jpg" srcset="/images/BLB-lg.jpg" alt="大量採購" draggable="false" class="img-responsive">
         </picture>
       </a>
     </div>

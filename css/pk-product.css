@@ -114,7 +114,7 @@
   }
 }
 #pkdv .breadcrumb {
-  padding: 20px 0;
+  padding: 30px 0;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
@@ -426,57 +426,28 @@
   display: inline-flex;
   justify-content: center;
   position: absolute;
-  top: 31px;
-  right: 31px;
+  top: 15.5px;
   z-index: 9;
   min-width: 62px;
   height: 62px;
   line-height: 62px;
   padding: 0 5px;
+  left: calc(inherit / 4);
+  right: 15.5px;
 }
 @media (min-width: 1200px) {
   #pkdv .iconTxt {
     top: 31px;
+    left: calc(inherit / -2);
     right: -31px;
   }
 }
 #pkdv .iconTxt-recommend {
   background: #FF0000;
-  color: #fff;
+  color: #ffffff;
 }
 #pkdv .iconTxt-new {
   background: #FFE000;
-}
-@media (min-width: 1200px) {
-  #pkdv .iconTxt {
-    display: inline-flex;
-    justify-content: center;
-    position: absolute;
-    top: 31px;
-    right: 31px;
-    z-index: 9;
-    min-width: 62px;
-    height: 62px;
-    line-height: 62px;
-    padding: 0 5px;
-  }
-}
-@media (min-width: 1200px) and (min-width: 1200px) {
-  #pkdv .iconTxt {
-    top: 31px;
-    right: -31px;
-  }
-}
-@media (min-width: 1200px) {
-  #pkdv .iconTxt-recommend {
-    background: #FF0000;
-    color: #fff;
-  }
-}
-@media (min-width: 1200px) {
-  #pkdv .iconTxt-new {
-    background: #FFE000;
-  }
 }
 @media (min-width: 1200px) {
   #pkdv .btn-block {

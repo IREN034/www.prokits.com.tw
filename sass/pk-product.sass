@@ -26,15 +26,12 @@
     left: calc(50% - 15px)
     +icon(30px,30px,$icon-play)
   .iconTxt
-    +iconTxt(62px)
-
-    @media (min-width: $screen-lg)
-      +iconTxt(62px)
+    +iconTxt(62px, $right:62px)
 
   .btn-block
     @media (min-width: $screen-lg)
       width: 85%
-
+  // 驗證碼
   .verificationCode
     display: flex
     align-items: center

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #pkdv .breadcrumb {
-  padding: 20px 0;
+  padding: 30px 0;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
@@ -26,6 +26,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+#pkdv .swiper-pagination-bullets {
+  bottom: 15px;
+}
 #pkdv .swiper-button-next:after, #pkdv .swiper-button-prev:after {
   color: #ffffff;
   font-size: 2em;
@@ -35,7 +38,7 @@
   width: 47px;
   height: 4px;
   border-radius: 0;
-  background: #ffffff;
+  background: #cccccc;
   opacity: 0.7;
 }
 #pkdv .swiper-pagination-bullet-active {
@@ -121,6 +124,8 @@
   font-weight: 600;
 }
 #pkdv .proList-link {
+  display: block;
+  position: relative;
   text-decoration: none;
 }
 #pkdv .pagination {
@@ -194,39 +199,30 @@
   background-size: contain;
   margin: 0 3px;
 }
-#pkdv .icon-new {
+#pkdv .iconTxt {
+  display: inline-flex;
+  justify-content: center;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
   z-index: 9;
-  display: inline-block;
-  width: 48px;
+  min-width: 48px;
   height: 48px;
-  background: url("../images/new-icon.svg") no-repeat;
-  background-size: contain;
-  margin: 0 3px;
+  line-height: 48px;
+  padding: 0 5px;
+  left: 12px;
+  right: calc(inherit / 4);
 }
 @media (min-width: 1200px) {
-  #pkdv .icon-new {
-    top: -18px;
-    left: -5px;
+  #pkdv .iconTxt {
+    top: 24px;
+    left: -24px;
+    right: calc(inherit / -2);
   }
 }
-#pkdv .icon-recommend {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 9;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: url("../images/recommend-icon.svg") no-repeat;
-  background-size: contain;
-  margin: 0 3px;
+#pkdv .iconTxt-recommend {
+  background: #FF0000;
+  color: #ffffff;
 }
-@media (min-width: 1200px) {
-  #pkdv .icon-recommend {
-    top: -18px;
-    left: -5px;
-  }
+#pkdv .iconTxt-new {
+  background: #FFE000;
 }/*# sourceMappingURL=pk-classificationt.css.map */

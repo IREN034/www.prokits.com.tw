@@ -117,22 +117,29 @@
 	background-size: contain
 	margin: 0 3px
 
-@mixin iconTxt($widthHeight: 24px )
+@mixin iconTxt($widthHeight: 24px, $left: inherit, $right: inherit )
 	display: inline-flex
 	justify-content: center
 	position: absolute
-	top: 31px
-	right: calc( $widthHeight / 2 )
+	top: calc( $widthHeight / 4 )
 	z-index: $zindex-floor
 	min-width: $widthHeight
 	height: $widthHeight
 	line-height: $widthHeight
 	padding: 0 5px
+	@if $left
+		left: calc( $left / 4 )
+	@if $right
+		right: calc( $right / 4 )
+
 	@media (min-width: $screen-lg)
-		top: 31px
-		right: calc( $widthHeight / -2 )
+		top: calc( $widthHeight / 2 )
+		@if $left
+			left: calc( $left / -2 )
+		@if $right
+			right: calc( $right / -2 )
 	&-recommend
 		background: #FF0000
-		color: #fff
+		color: $WHITEcolor
 	&-new
 		background: #FFE000

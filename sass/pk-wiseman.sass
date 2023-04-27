@@ -8,14 +8,17 @@
   @import _dropdown
   .wiseman
     &-title
-      padding: 0 0 10px
+      margin-top: 20px
+      padding: 0 20px 10px
       font-size: $font-size-lg
       font-weight: 600
       color: darken($WHITEcolor, 89%)
+      @media (min-width: $screen-lg)
+        padding: 0 0 10px
     .img-responsive
       margin: 0 auto
   .wisemanImmed
-    margin-bottom: 50px
+    margin-bottom: 30px
     padding-bottom: 50px
     border-bottom: 3px dashed #FFBA35
     &-list

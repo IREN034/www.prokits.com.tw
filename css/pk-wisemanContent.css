@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #pkdv .breadcrumb {
-  padding: 20px 0;
+  padding: 30px 0;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
 }
@@ -145,8 +145,14 @@
 }
 #pkdv .sideMenuDate {
   margin-bottom: 50px;
+  padding: 0 20px;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
+}
+@media (min-width: 1200px) {
+  #pkdv .sideMenuDate {
+    padding: 0;
+  }
 }
 #pkdv .sideMenuDate-title {
   font-size: 1.25em;
@@ -196,8 +202,14 @@
 }
 #pkdv .sideMenuDate + .sideMenuDate {
   margin-bottom: 50px;
+  padding: 0 20px;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
+}
+@media (min-width: 1200px) {
+  #pkdv .sideMenuDate + .sideMenuDate {
+    padding: 0;
+  }
 }
 #pkdv .sideMenuDate + .sideMenuDate-title {
   font-size: 1.25em;
