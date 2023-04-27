@@ -482,4 +482,11 @@
   #pkdv .btn-block {
     width: 85%;
   }
+}
+#pkdv .verificationCode {
+  display: flex;
+  align-items: center;
+}
+#pkdv .verificationCode .form-control {
+  width: auto;
 }/*# sourceMappingURL=pk-product.css.map */

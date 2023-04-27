@@ -38,10 +38,12 @@
           <div class="form-group">
             <label class="col-xs-12 col-sm-2" for="verificationCode">驗證碼</label>
             <div class="col-xs-12 col-sm-10">
-              <img src="/images/login_validatecode.png" alt="" />
-
-              <input name="verificationCode" id="verificationCode" type="text" class="form-control"
-                placeholder="請輸入驗證碼">
+              <div class="verificationCode">
+                <img src="/images/login_validatecode.png" alt="" />
+                <a href=""><img src="/images/refresh-icon.png" alt="" style="width: 25px; margin: 0 5px" /></a>
+                <input name="verificationCode" id="verificationCode" type="text" class="form-control"
+                  placeholder="請輸入驗證碼">
+              </div>
             </div>
           </div>
 
