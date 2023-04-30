@@ -1,8 +1,80 @@
 .pkBrand
   @media (min-width: $screen-lg)
     +linearGradient(linear-gradient(to right,#4DA9A0 50%, #2C6753 50%))
-
-  &-legend
+  &-title
+    position: relative
+    font-size: 3.125em
+    font-family: $font-family-en
+    color: darken($WHITEcolor, 0%)
+    opacity: 0.8
+    text-align: center
+    @media (min-width: $screen-lg)
+      text-align: right
+      &:first-child
+        &::before
+          content: ""
+          display: block
+          width: 150px
+          height: 3px
+          background: darken($WHITEcolor, 0%)
+          position: absolute
+          right: 20px
+          bottom: -10px
+          opacity: 0.5
+    &:nth-child(2)
+      font-size: 5em
+      opacity: 0.5
+      font-weight: 900
+      line-height: 1.2em
+      @media (min-width: $screen-lg)
+        font-size: 10em
+  &-logo
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 180px
+    height: 180px
+    padding: 15px
+    border-radius: 50%
+    background: #ffffff6b
+    text-align: center
+    @media (min-width: $screen-sm)
+      width: 230px
+      height: 230px
+    &-group
+      display: flex
+      justify-content: center
+      @media (min-width: $screen-lg)
+        display: block
+    &-img
+      max-width: 100%
+      &.industry
+        height: 80px
+      &.science
+        height: 65px
+    &:last-child
+      position: relative
+      left: -20px
+  &-bgImg
+    position: relative
+    overflow: hidden
+    &::before
+      content: ""
+      background: url(../images/brandBg.svg) no-repeat
+      width: 461px
+      height: 455px
+      position: absolute
+      right: calc(50% - -481px)
+      top: calc(50% - 225px)
+    &::after
+      content: ""
+      background: url(../images/brandBg2.svg) no-repeat
+      width: 486px
+      height: 528px
+      position: absolute
+      left: calc(50% - -496px)
+      top: calc(50% - 225px)
+  &-left
     +distanceMP(50px 40px, 20px 0)
     +fontT-md(2em)
     border-top: 2px solid darken($WHITEcolor, 0%)
@@ -10,17 +82,15 @@
     color: darken($WHITEcolor, 0%)
     @media (min-width: $screen-lg)
       +distanceMP(100px 120px 100px 0, 20px 0)
-    &-bgImg
-      position: relative
-      &::before
-        content: ""
-        background: url(../images/brandBg.svg) no-repeat
-        width: 461px
-        height: 455px
-        position: absolute
-        left: -350px
-        top: calc(50% - 225px)
     &-bgColor
       background: #4DA9A0
+      @media (min-width: $screen-lg)
+        background: none
+  &-right
+    padding: 50px 20px
+    @media (min-width: $screen-lg)
+      padding: 100px 0 80px 50px
+    &-bgColor
+      background: #2C6753
       @media (min-width: $screen-lg)
         background: none
