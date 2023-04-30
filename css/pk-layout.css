@@ -599,4 +599,65 @@ hr {
 }
 #pkdv .btn-block + .btn-block {
   margin-top: 5px;
+}
+#pkdv .footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2em;
+}
+#pkdv .footer * {
+  color: white;
+}
+#pkdv .footer *:hover {
+  color: white;
+}
+#pkdv .footer-logo {
+  order: 2;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  font-size: 0.7em;
+}
+#pkdv .footer-logo-img {
+  max-width: 100%;
+}
+#pkdv .footer-logo-img.industry {
+  height: 80px;
+}
+#pkdv .footer-logo-img.science {
+  height: 65px;
+}
+@media (min-width: 992px) {
+  #pkdv .footer-logo {
+    order: 1;
+    margin: 40px 0;
+    padding: 40px 15px 40px 0;
+    border-right: 1px solid currentColor;
+  }
+}
+#pkdv .footer-list {
+  order: 1;
+  padding: 20px 10px 0;
+}
+@media (min-width: 992px) {
+  #pkdv .footer-list {
+    padding: 50px;
+  }
+}
+#pkdv .footer-item {
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  #pkdv .footer-item {
+    padding: 0;
+  }
+}
+#pkdv .pkCI-footer-industry {
+  background-color: #1C473B;
+}
+#pkdv .pkCI-footer-industry-science {
+  background-color: #0097DA;
 }/*# sourceMappingURL=pk-layout.css.map */

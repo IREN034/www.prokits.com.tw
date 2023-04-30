@@ -1,0 +1,56 @@
+.pkProdects
+  margin: 50px 0 100px
+  +fontT
+  text-align: center
+  &-title
+    margin-bottom: 30px
+    font-size: 2.8em
+    font-weight: 600
+    &.industry
+      color: #33583E
+    &.science
+      color: #0097DA
+  &-clsList
+    margin-bottom: 30px
+    &-item, &-more
+      display: inline-flex
+      padding: 10px
+      font-size: 1.5em
+      font-weight: 600
+      &.industry
+        color: #256C53
+      &.science
+        color: #0097DA
+    &-more
+      margin-top: 20px
+      padding: 15px 30px
+      border: 1px solid currentColor
+      border-radius: 30px
+      @media (min-width: $screen-lg)
+        position: absolute
+        right: 0
+        margin: 0
+    &-active
+      color: darken($WHITEcolor, 95%)
+  &-item
+    +distanceMP(10px, 30px 10px)
+    border-radius: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    &-name
+      display: block
+      border-radius: 20px
+      color: #fff
+      padding: 5px 10px
+      margin-top: 20px
+      &.industry
+        background: #33583E
+      &.science
+        background: #0097DA
+    &.industry
+      background: darken($WHITEcolor, 5%)
+    &.science
+      background: #FEFFE3

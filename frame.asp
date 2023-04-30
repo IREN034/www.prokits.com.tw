@@ -15,3 +15,16 @@
 
 <link href="/css/bootstrap.min.css" rel="stylesheet" />
 <link href="/css/pk-layout.css" rel="stylesheet" />
+
+<script>
+  // 算螢幕的寬度
+  function getTotalWidth() {
+    var myWidth;
+    if (typeof (window.innerWidth) == 'number') {
+      myWidth = window.innerWidth - 20;
+    } else {
+      myWidth = document.documentElement.clientWidth - 20;
+    }
+    return myWidth;
+  }
+</script>

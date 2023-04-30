@@ -1,1 +1,271 @@
-/*# sourceMappingURL=pk-index.css.map */
+@charset "UTF-8";
+#pkdv a {
+  text-decoration: none;
+}
+#pkdv img {
+  margin: 0 auto;
+}
+#pkdv .swiper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pkdv .swiper-pagination-bullets {
+  bottom: 15px;
+}
+#pkdv .swiper-button-next:after, #pkdv .swiper-button-prev:after {
+  color: #ffffff;
+  font-size: 2em;
+  opacity: 0;
+}
+#pkdv .swiper-pagination-bullet {
+  width: 47px;
+  height: 4px;
+  border-radius: 0;
+  background: #cccccc;
+  opacity: 0.7;
+}
+#pkdv .swiper-pagination-bullet-active {
+  background: #256C53;
+}
+#pkdv .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+}
+#pkdv .swiper-slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#pkdv .pkNew {
+  position: relative;
+  margin: 10px 0 50px;
+  padding-top: 50px;
+  background: url(../images/newBg.svg) no-repeat;
+  background-position: -22px 0;
+  background-repeat-x: repeat;
+}
+@media (min-width: 992px) {
+  #pkdv .pkNew {
+    display: flex;
+  }
+  #pkdv .pkNew:before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 22px;
+    top: 50%;
+    left: calc(35% + 11px);
+    background: url(../images/newBg.svg) center center no-repeat;
+    transform: rotate(90deg);
+  }
+}
+#pkdv .pkNew-title {
+  margin-top: 50px;
+  color: #5C685B;
+  font-size: 2.25em;
+  font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+#pkdv .pkNew-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  #pkdv .pkNew-list:first-child {
+    padding-right: 40px;
+  }
+  #pkdv .pkNew-list:last-child {
+    padding-left: 40px;
+  }
+}
+#pkdv .pkNew-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25em;
+  font-weight: 600;
+  color: #256C53;
+}
+@media (min-width: 992px) {
+  #pkdv .pkNew-item {
+    padding: 10px 0;
+  }
+}
+#pkdv .pkNew-item time {
+  padding-left: 20px;
+  color: #1a1a1a;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+#pkdv .pkNew-more {
+  margin: 20px 20px 0;
+  text-align: right;
+  font-size: 1.25em;
+}
+@media (min-width: 992px) {
+  #pkdv .pkNew-more {
+    margin: 20px 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  #pkdv .pkBrand {
+    background: linear-gradient(to right, #4DA9A0 50%, #2C6753 50%);
+    -pie-background: linear-gradient(to right, #4DA9A0 50%, #2C6753 50%);
+    behavior: url(/pie/PIE.htc);
+  }
+}
+#pkdv .pkBrand-legend {
+  margin: 50px 40px;
+  padding: 20px 0;
+  font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2em;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+}
+@media (min-width: 1200px) {
+  #pkdv .pkBrand-legend {
+    margin: 100px 120px 100px 0;
+    padding: 20px 0;
+  }
+}
+#pkdv .pkBrand-legend-bgImg {
+  position: relative;
+}
+#pkdv .pkBrand-legend-bgImg::before {
+  content: "";
+  background: url(../images/brandBg.svg) no-repeat;
+  width: 461px;
+  height: 455px;
+  position: absolute;
+  left: -350px;
+  top: calc(50% - 225px);
+}
+#pkdv .pkBrand-legend-bgColor {
+  background: #4DA9A0;
+}
+@media (min-width: 1200px) {
+  #pkdv .pkBrand-legend-bgColor {
+    background: none;
+  }
+}
+#pkdv .pkProposal {
+  padding-bottom: 50px;
+  text-align: center;
+}
+#pkdv .pkProposal-title {
+  margin-top: 50px;
+  color: #5C685B;
+  font-size: 2.25em;
+  font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+#pkdv .pkProposal-item {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 40px;
+  font: 1.25em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+  background: #3E8C7D;
+  color: white;
+  width: 33.3333333333%;
+}
+@media (min-width: 992px) {
+  #pkdv .pkProposal-item {
+    width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  #pkdv .pkProposal-item {
+    width: inherit;
+    min-width: calc(16.6666666667% - 30px);
+  }
+}
+#pkdv .pkProdects {
+  margin: 50px 0 100px;
+  font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+  text-align: center;
+}
+#pkdv .pkProdects-title {
+  margin-bottom: 30px;
+  font-size: 2.8em;
+  font-weight: 600;
+}
+#pkdv .pkProdects-title.industry {
+  color: #33583E;
+}
+#pkdv .pkProdects-title.science {
+  color: #0097DA;
+}
+#pkdv .pkProdects-clsList {
+  margin-bottom: 30px;
+}
+#pkdv .pkProdects-clsList-item, #pkdv .pkProdects-clsList-more {
+  display: inline-flex;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+#pkdv .pkProdects-clsList-item.industry, #pkdv .pkProdects-clsList-more.industry {
+  color: #256C53;
+}
+#pkdv .pkProdects-clsList-item.science, #pkdv .pkProdects-clsList-more.science {
+  color: #0097DA;
+}
+#pkdv .pkProdects-clsList-more {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: 1px solid currentColor;
+  border-radius: 30px;
+}
+@media (min-width: 1200px) {
+  #pkdv .pkProdects-clsList-more {
+    position: absolute;
+    right: 0;
+    margin: 0;
+  }
+}
+#pkdv .pkProdects-clsList-active {
+  color: #0d0d0d;
+}
+#pkdv .pkProdects-item {
+  margin: 10px;
+  padding: 30px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#pkdv .pkProdects-item-name {
+  display: block;
+  border-radius: 20px;
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+#pkdv .pkProdects-item-name.industry {
+  background: #33583E;
+}
+#pkdv .pkProdects-item-name.science {
+  background: #0097DA;
+}
+#pkdv .pkProdects-item.industry {
+  background: #f2f2f2;
+}
+#pkdv .pkProdects-item.science {
+  background: #FEFFE3;
+}/*# sourceMappingURL=pk-index.css.map */

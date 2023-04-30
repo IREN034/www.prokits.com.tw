@@ -18,7 +18,7 @@
 
       <!-- #include virtual="/header.asp" -->
 
-      <!-- productInfo -->
+      <!-- classification -->
       <div class="container-full">
         <!-- 首圖 -->
         <!-- #include virtual="/component/_BLB-ring.asp" -->
@@ -49,7 +49,7 @@
         </div>
 
       </div>
-      <!-- productInfo END -->
+      <!-- classification END -->
 
       <!-- #include virtual="/footer.asp" -->
 

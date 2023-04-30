@@ -4,27 +4,38 @@
 	<head>
 		<%title="寶工產品介紹-prokits" %>
 			<!--#include virtual="frame.asp"-->
-			<link href="/css/index.css" rel="stylesheet" />
+
+			<!-- https://swiperjs.com/demos -->
+			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+			<link href="/css/pk-index.css" rel="stylesheet" />
+
 	</head>
 
 	<body>
-		<div id="lsdv">
+		<div id="pkdv">
 
-			<h1 class="text-hide">寶工</h1>
-
-			<!-- Header -->
 			<!-- #include virtual="/header.asp" -->
-			<!-- /Header -->
 
 			<div class="container-full">
+				<!-- 首圖 -->
+				<!-- #include virtual="/component/_BLB-ring.asp" -->
 				<div class="container">
-
+					<!-- #include virtual="/component/index/_new.asp" -->
 				</div>
 			</div>
 
-			<!-- Footer -->
+			<!-- #include virtual="/component/index/_brand.asp" -->
+
+			<div class="container-full">
+				<div class="container">
+					<!-- #include virtual="/component/index/_proposal.asp" -->
+					<!-- #include virtual="/component/index/_prodects.asp" -->
+				</div>
+			</div>
+
 			<!-- #include virtual="/footer.asp" -->
-			<!-- /Footer -->
 
 		</div>
 	</body>

@@ -1,0 +1,54 @@
+.pkNew
+  position: relative
+  margin: 10px 0 50px
+  padding-top: 50px
+  background: url(../images/newBg.svg) no-repeat
+  background-position: -22px 0
+  background-repeat-x: repeat
+  @media (min-width: $screen-md)
+    display: flex
+    &:before
+      content: ""
+      position: absolute
+      width: 30%
+      height: 22px
+      top: 50%
+      left: calc(35% + 11px)
+      background: url(../images/newBg.svg) center center no-repeat
+      transform: rotate(90deg)
+  &-title
+    margin-top: 50px
+    color: #5C685B
+    font-size: 2.25em
+    font-family: $font-family
+    font-weight: 600
+  &-list
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: space-between
+    @media (min-width: $screen-md)
+      &:first-child
+        padding-right: 40px
+      &:last-child
+        padding-left: 40px
+  &-item
+    display: flex
+    justify-content: space-between
+    padding: 10px 20px
+    +fontT-md($font-size-md)
+    font-weight: 600
+    color: $CIScolorLink
+    @media (min-width: $screen-md)
+      padding: 10px 0
+    time
+      padding-left: 20px
+      color: darken($WHITEcolor, 90%)
+      font-weight: normal
+      font-size: $font-size-xs
+  &-more
+    margin: 20px 20px 0
+    text-align: right
+    font-size: $font-size-md
+    @media (min-width: $screen-md)
+      margin: 20px 0 0

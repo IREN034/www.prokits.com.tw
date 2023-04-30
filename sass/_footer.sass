@@ -1,0 +1,35 @@
+.footer
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  +fontT(2em)
+  *
+    color: darken($WHITEcolor, 0%)
+    &:hover
+      color: darken($WHITEcolor, 0%)
+  &-logo
+    order: 2
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    padding: 20px 10px
+    font-size: $font-size-xs
+    &-img
+      max-width: 100%
+      &.industry
+        height: 80px
+      &.science
+        height: 65px
+    @media (min-width: $screen-md)
+      order: 1
+      +distanceMP(40px 0, 40px 15px 40px 0)
+      border-right: 1px solid currentColor
+  &-list
+    order: 1
+    padding: 20px 10px 0
+    @media (min-width: $screen-md)
+      padding: 50px
+  &-item
+    padding-bottom: 20px
+    @media (min-width: $screen-md)
+      padding: 0

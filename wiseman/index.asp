@@ -18,7 +18,7 @@
 
       <!-- #include virtual="/header.asp" -->
 
-      <!-- productInfo -->
+      <!-- wiseman -->
       <div class="container-full">
 
         <div class="container wiseman">
@@ -44,7 +44,7 @@
         </div>
 
       </div>
-      <!-- productInfo END -->
+      <!-- wiseman END -->
 
       <!-- #include virtual="/footer.asp" -->
 
