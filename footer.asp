@@ -1,7 +1,7 @@
-<!-- pkCI-footer-science: 科學玩具 -->
-<!-- pkCI-footer-industry:  -->
+<!-- pkCI-background-science: 科學玩具 -->
+<!-- pkCI-background-industry:  -->
 
-<footer class="pkCI-footer-industry">
+<footer class="pkCI-background-industry">
   <div class="container-fluid">
     <div class="container footer">
       <div class="col-xs-12 col-md-2-5 footer-logo">
