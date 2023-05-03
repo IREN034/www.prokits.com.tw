@@ -109,7 +109,7 @@ svg:not(:root) {
 }
 
 figure {
-  margin: 1em 40px;
+  margin: 0;
 }
 
 hr {
@@ -584,7 +584,6 @@ hr {
 #pkdv .btn-lg,
 #pkdv .btn-group-lg > .btn {
   padding: 12px 20px;
-  font-size: 1.25em;
 }
 #pkdv .btn-sm,
 #pkdv .btn-group-sm > .btn {
@@ -658,6 +657,6 @@ hr {
 #pkdv .pkCI-background-industry {
   background-color: #1C473B;
 }
-#pkdv .pkCI-background-industry-science {
+#pkdv .pkCI-background-science {
   background-color: #0097DA;
 }/*# sourceMappingURL=pk-layout.css.map */

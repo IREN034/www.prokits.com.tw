@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-7 productSwiper">
+<div class="col-xs-12 col-md-6 productSwiper">
 
   <div class="swiper swiper-BigImg">
     <div class="swiper-wrapper" itemscope itemtype="https://schema.org/ImageObject">

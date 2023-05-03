@@ -3,6 +3,7 @@
   padding: 30px 0;
   font: 1em "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1em;
+  background: none;
 }
 #pkdv .breadcrumb > li {
   display: inline-block;
@@ -256,6 +257,7 @@
   height: 48px;
   line-height: 48px;
   padding: 0 5px;
+  font-size: 0.93em;
   left: 12px;
   right: calc(inherit / 4);
 }

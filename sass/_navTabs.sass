@@ -2,6 +2,8 @@
   display: flex
   position: relative
   width: 100%
+  max-width: calc($screen-lg - $grid-gutter-width) // old header
+  padding: 0
   border: 1px solid darken($WHITEcolor, 30%)
   border-right: none
   border-left: none
@@ -11,6 +13,9 @@
   &-fixed
     position: fixed
     top: 0
+    left: 0
+    @media (min-width: $screen-lg)
+      left: inherit
   &-item
     display: inline-flex
     align-items: center
@@ -24,15 +29,15 @@
     @media (min-width: $screen-md)
       width: fit-content
       padding: 20px 30px
-      font-size: $font-size-md
     &-active
       background: darken($WHITEcolor, 15%)
   &-pane
     display: none
-    max-width: 800px
-    +distanceMP(0 auto, 30px)
+    max-width: 900px
+    +distanceMP(0 auto, 30px 0)
     word-break: break-all
     &-active
       display: block
     &-title
       padding-bottom: 30px
+    @import _editor

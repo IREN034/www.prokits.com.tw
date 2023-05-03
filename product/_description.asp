@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-5 productDescription">
+<div class="col-xs-12 col-md-6 col-lg-5 col-lg-push-1 productDescription">
   <h2 itemprop="sku" class="productDescription-sku">GE-892</h2>
   <ul class="productDescription-supported">
     <li class="productDescription-supported-item">Taiwan</li>
