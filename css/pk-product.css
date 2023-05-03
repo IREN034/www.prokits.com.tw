@@ -227,7 +227,7 @@
 }
 @media (min-width: 1200px) {
   #pkdv .productDescription {
-    padding: 0 0 30px 60px;
+    padding: 0 0 30px 0;
   }
 }
 #pkdv .productDescription-sku {
