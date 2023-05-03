@@ -144,3 +144,10 @@
 		color: $WHITEcolor
 	&-new
 		background: #FFE000
+
+@mixin button($background, $hoverBackground, $color)
+	background: $background
+	color: $color
+	&:hover, &:focus
+		background: $hoverBackground
+		color: $color

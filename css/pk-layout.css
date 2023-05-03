@@ -520,6 +520,7 @@ hr {
   text-align: center;
   border: none;
   border-radius: 50px;
+  text-decoration: none;
 }
 #pkdv .btn:hover, #pkdv .btn:focus, #pkdv .btn.focus, #pkdv .btn:active, #pkdv .btn.active {
   border: none;
