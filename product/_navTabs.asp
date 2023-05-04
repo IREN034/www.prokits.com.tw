@@ -1,18 +1,18 @@
 <ul class="container navTabs" id="js-navTabs" role="tablist">
   <li class="navTabs-item navTabs-item-active" role="productInfo" onclick="onChangesTabs(event, 'productInfo')">
-    產品說明
+    產品<br class="visible-xs" />說明
   </li>
   <li class="navTabs-item" role="productAssemble" onclick="onChangesTabs(event, 'productAssemble')">
-    教學影片
+    教學<br class="visible-xs" />影片
   </li>
   <li class="navTabs-item" role="hoproductmeFaq" onclick="onChangesTabs(event, 'hoproductmeFaq')">
     FAQ
   </li>
   <li class="navTabs-item" role="productDownload" onclick="onChangesTabs(event, 'productDownload')">
-    說明書/<br class="visible-xs visible-sm" />程式下載
+    說明書/<br class="visible-xs visible-sm" />程式<br class="visible-xs" />下載
   </li>
   <li class="navTabs-item" role="productDownload" onclick="onChangesTabs(event, 'productDistribution')">
-    經銷說明
+    經銷<br class="visible-xs" />說明
   </li>
 </ul>
 
@@ -27,6 +27,12 @@
   <div class="navTabs-pane" id="hoproductmeFaq" role="tabpanel" aria-labelledby="faq-tab">
     <p class="navTabs-pane-title">FAQ</p>
     <!-- #include virtual="/product/_faqCollapse.asp" -->
+    <div class="text-center">
+      <a class="btn btn-science btn-lg" href="#">
+        科玩補配件
+        <i class="icon-arrow"></i>
+      </a>
+    </div>
   </div>
   <div class="navTabs-pane" id="productDownload" role="tabpanel" aria-labelledby="download-tab">
     <p class="navTabs-pane-title">說明書/程式下載</p>說明書/程式下載...
