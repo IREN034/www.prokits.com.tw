@@ -321,6 +321,7 @@
   font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   z-index: 9;
   background: white;
+  overflow-x: auto;
 }
 #pkdv .navTabs-fixed {
   position: fixed;
@@ -336,7 +337,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
+  flex: 1;
   padding: 15px 8px;
   color: #1d1d1d;
   cursor: pointer;
@@ -487,12 +488,15 @@
 #pkdv .verificationCode .form-control {
   width: auto;
 }
-#pkdv .btn-science {
-  margin-top: 50px;
+#pkdv .tabs-btn-group {
+  margin-top: 30px;
+}
+#pkdv .tabs-btn-group .btn-science {
+  margin-top: 20px;
   background: #0097DA;
   color: #ffffff;
 }
-#pkdv .btn-science:hover, #pkdv .btn-science:focus {
+#pkdv .tabs-btn-group .btn-science:hover, #pkdv .tabs-btn-group .btn-science:focus {
   background: #97BACA;
   color: #ffffff;
 }/*# sourceMappingURL=pk-product.css.map */

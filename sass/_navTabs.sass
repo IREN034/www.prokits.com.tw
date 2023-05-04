@@ -10,6 +10,7 @@
   font-family: $font-family
   z-index: $zindex-floor
   background: darken($WHITEcolor, 0%)
+  overflow-x: auto
   &-fixed
     position: fixed
     top: 0
@@ -20,7 +21,7 @@
     display: inline-flex
     align-items: center
     justify-content: center
-    width: calc(100% / 5)
+    flex: 1
     padding: 15px 8px
     color: darken($WHITEcolor, 88.5%)
     cursor: pointer
