@@ -9,7 +9,7 @@
     FAQ
   </li>
   <li class="navTabs-item" role="productDownload" onclick="onChangesTabs(event, 'productDownload')">
-    說明書/<br class="visible-xs visible-sm" />程式<br class="visible-xs" />下載
+    說明書/<br class="visible-xs visible-sm" />程式
   </li>
   <li class="navTabs-item" role="productDownload" onclick="onChangesTabs(event, 'productDistribution')">
     經銷<br class="visible-xs" />說明
@@ -39,6 +39,16 @@
   </div>
   <div class="navTabs-pane" id="productDistribution" role="tabpanel" aria-labelledby="distribution-tab">
     <p class="navTabs-pane-title">經銷說明</p>經銷說明
+    <div class="text-center">
+      <a class="btn btn-science btn-lg" href="#">
+        圖片下載
+        <i class="icon-arrow"></i>
+      </a>
+      <a class="btn btn-science btn-lg" href="#">
+        特色圖片下載
+        <i class="icon-arrow"></i>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -63,14 +73,14 @@
 
   }
 
-  // scrollTop>600 即固定
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 600) {
-        $('#js-navTabs').addClass("navTabs-fixed");
-      } else {
-        $('#js-navTabs').removeClass("navTabs-fixed");
-      }
-    });
+  // scrollTop>#js-navTabs 即固定
+  var tabsFix = $("#js-navTabs");
+  var tabsPosition = tabsFix.offset();
+  $(window).scroll(function () {
+    if (tabsPosition.top <= $(this).scrollTop()) {
+      $('#js-navTabs').addClass("navTabs-fixed");
+    } else {
+      $('#js-navTabs').removeClass("navTabs-fixed");
+    }
   });
 </script>

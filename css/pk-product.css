@@ -321,6 +321,7 @@
   font-family: "微軟正黑體", "新細明體", futuramedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   z-index: 9;
   background: white;
+  overflow-x: auto;
 }
 #pkdv .navTabs-fixed {
   position: fixed;
@@ -336,7 +337,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
+  flex: 1;
   padding: 15px 8px;
   color: #1d1d1d;
   cursor: pointer;
